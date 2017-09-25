@@ -1,0 +1,134 @@
+/*------Footer--------*/
+.footer-top{
+    width: 100%;
+    background: #579e32;
+    display:block;
+    padding:30px 0;
+}
+.footer-in h4{
+    color:#747272;
+    font-size:1.4em;
+}
+.footer-in p i{
+    width: 30px;
+    height: 30px;
+    background: url(../images/img-sprite.png)no-repeat -235px -11px ;
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer-in h4 i.cross{
+    background-position:-275px -11px ;
+}
+.footer-in h4 i.down{
+    background-position:-313px -11px ;
+}
+.footer-in p{
+    color: #ffffff;
+    font-size:18px;
+}
+.icon_direccion{
+    background: url(../images/icon_direccion.png) no-repeat;
+    height: 56px;
+    width:56px;
+    float: left;
+    margin-right: 10px;
+}
+.icon_correo{
+    background: url(../images/icon_correo.png) no-repeat;
+    height: 56px;
+    width:56px;
+    float: left;
+    margin-right: 10px;
+}
+.icon_fono{
+    background: url(../images/icon_fono.png) no-repeat;
+    height: 56px;
+    width:56px;
+    float: left;
+    margin-right: 10px;
+}
+.footer-in .fono{
+    font-size: 24px;
+    font-weight: bold;
+}
+.gracias-a{
+    padding-right: 20px;
+    img {
+        width: auto;
+        height: 46px;
+    }
+}
+
+
+/***footer 2*///
+.footer-middle {
+    background: url(../images/sombra-footer.png) top center no-repeat #579e32;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.footer-middle-in {
+  float: left;
+  width: 20%;
+}
+.footer-middle-in  h6{
+    color:#fff;
+    font-size:1.3em;
+    padding:0 0 0.4em;
+    text-transform:uppercase;
+}
+.footer-middle-in  p{
+    color:#c9c9c9;
+    font-size:0.9em;
+    line-height:1.9em;
+    width: 79%;
+}
+.footer-middle-in  ul li{
+    list-style:none;
+}
+.footer-middle-in  ul li a{
+    color:#c9c9c9;
+    font-size:0.9em;
+    text-decoration:none;
+    padding:0 0 0.5em ;
+    display:block;
+}
+.footer-middle-in  ul li a:hover{
+    color:#f95a32;
+}
+.footer-class{
+    color:#356d12;
+    font-size:10px;
+    font-weight: bold;
+
+}
+.footer-class-2{
+    color:#356d12;
+    font-size:10px;
+    text-align: right;
+    font-weight: bold;
+}
+.footer-class-2 a{
+    color:#f95a32;
+    text-decoration:none;
+}
+.footer-class-2 a:hover{
+    color:#c9c9c9;
+}
+@media (max-width: 768px)  {
+    .footer-class {
+        text-align: center;
+    }
+    .footer-class-2 {
+        text-align: center;
+    }
+    .gracias-a{
+    text-align: center;
+        img {
+            width: auto;
+            height: 35px;
+        }
+    }
+    .btn_suscribirse {
+    width: 100%;
+    }
+}

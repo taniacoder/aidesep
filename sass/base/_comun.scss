@@ -1,0 +1,48 @@
+
+/*------Comuns--------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #fff;
+    font-family: 'Century Gothic', sans-serif;
+    a{
+    	    -webkit-transition: 0.3s all;
+    }
+}
+
+@media (min-width: 1200px) {
+/*.container { 
+    width: 1300px;
+}*/
+}
+
+.circle-item {
+     border: 4px solid #579f33;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+        margin: 16px 10px 15px 0px;
+             &:hover, &:focus, {
+      border: 4px solid #fff;
+      
+    }
+}
+i.fa.fa-circle {
+        color: #579f33;
+    font-size: 10px;
+    padding: 15px 10px 0 0;
+    z-index: 1;
+    &:hover, &:focus , &:active {
+        color: #fff;
+
+    }
+}
+.item-sub {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+         &:hover, &:focus, &:active  {
+        color: #fff;
+    }
+}

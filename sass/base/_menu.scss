@@ -1,0 +1,274 @@
+/*------Menu--------*/
+//*header*//
+section.header {
+	padding: 30px 0 10px;
+}
+.head-right {
+	
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.idiomas {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    ul {
+		display: flex;
+		justify-content: flex-end;
+		list-style-type: none;
+		li{
+			font-size: 12px;
+    		a {
+    			color: #666;
+    		}
+		}
+    }
+}
+.icon_peru {
+    background: url(../images/peru.svg) no-repeat;
+    padding-left: 30px;
+}
+.icon_peru,{
+	&:hover, 
+	&:active,
+	&:focus {
+    background: url(../images/peru.svg) no-repeat;
+    padding-left: 30px;
+    margin-left: 20px;
+	}
+}
+
+.icon_euu {
+    background: url(../images/ingles-gris.svg) no-repeat;
+    padding-left: 30px;
+    margin-left: 20px;
+}
+.icon_euu {
+    &:hover, 
+    &:active {
+		background: url(../images/ingles.svg) no-repeat;
+    padding-left: 30px;
+    margin-left: 20px;
+    }
+}
+
+
+.logo-m-seeker {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 10px;
+	align-items: center;
+}
+
+/*redes*/
+.redes-seeker{
+	padding: 10px 0 15px;
+
+	ul {
+		display: flex;
+
+		list-style-type: none;
+		li {
+			padding: 0 5px;
+				.icono-primary {
+				display: inline-block;
+				text-decoration: none;
+				color: #fff;
+				background: #387014;
+				border-radius: 50%;
+				position: relative;
+				z-index: 1;
+				height: 35px;
+				width: 35px;
+				text-align: center;
+				line-height: 40px;
+
+			}
+		}
+	}
+}
+
+.redes-seeker .social-in .icono-primary:hover {
+		display: inline-block;
+		text-decoration: none;
+		color: #fff;
+		background: #EC8B00;
+		border-radius: 50%;
+		position: relative;
+		z-index: 1;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		line-height: 40px;
+
+}
+.redes-seeker .social-in li i {
+    display: inline-block;
+    font-size: 20px;
+}
+
+ul.social-in li i.rs {
+    background: url(../images/flickr.svg)no-repeat;
+    width: 40px;
+    height: 24px;
+}
+
+
+
+
+/*//*/
+.search {
+    float: right;
+    position: relative;
+    width: auto;
+    border: 2px solid #dbdbdb;
+    background: #fff;
+    border-radius: 4px;
+    margin-left: 30px;
+    height: 40px;
+}
+.search input[type="text"] {
+    outline: none;
+    padding: 10.5px 15px;
+    background: none;
+    width: 250px;
+    border: none;
+    font-size: 0.8em;
+    color: #4c4c4c;
+}
+.search input[type="submit"] {
+    width: 40px;
+    height: 40px;
+    /*background: url(../images/btn_buscar.png) 0px 0px no-repeat;*/
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    outline: none;
+    top: -2px;
+    right: -2px;
+}
+/*/*/
+/*menu*/
+.navbar-default {
+     border: none;
+    background: none;
+        
+}
+.navbar {
+    margin-bottom: 0px;
+    background-color: #007f48;
+    border-radius: 0px;
+}
+
+.nav-flex {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+	li {
+		display: flex;
+		justify-content: center;
+		width: 200px;
+		a {
+		text-decoration: none;
+	    border: none;
+	    font-size: 16.5px;
+	    color: #ffffff;
+	    padding: 14px 10px;
+	    font-weight: bold;
+		}
+		a:hover {
+	    	font-weight: bold;
+	    	color: #fff;
+	    }
+	}
+}
+/*.nav-flex li {
+    background: url(../images/hover-menu.png) bottom center no-repeat;
+    color: #000;
+    
+    -webkit-transition: width 2s;
+    transition: width 2s;
+    background-position-x: -300px;
+}
+
+*/
+.nav-flex li:hover {
+	background: #605050;
+    color: #fff;
+    font-weight: 900;
+}
+/*-hover-end--*/
+.navbar-header .redes-seeker {
+	display: none;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background: none;
+	border: none;
+}
+.navbar-default .navbar-toggle {
+border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 37px;
+    height: 4px;
+    border-radius: 1px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 6px;
+}
+@media (max-width: 1200px){
+	.nav-flex li a {
+	    font-size: 13px;
+	}
+}
+@media (max-width: 992px){
+	.nav-flex li a {
+	    font-size: 11px;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav-flex {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		li {
+			display: flex;
+			justify-content: center;
+			a {
+			text-decoration: none;
+		    border: none;
+		    font-size: 15px;
+		    color: #ffffff;
+		    padding: 14px 0px;
+			}
+		}
+	}
+	.navbar-default {
+	    background-color: #3C7B19;
+	}
+
+}
+
+@media (max-width: 560px) {
+ .head-right .redes-seeker ul {
+ 	display: none;
+ }
+ .navbar-header .redes-seeker {
+	display: flex;
+	justify-content: flex-start;
+    padding: 9px 0 0 9px;
+}
+}
+@media (max-width: 391px) {
+	.search input[type="text"] {
+    width: 178px;
+	}
+}
