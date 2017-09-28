@@ -44,13 +44,13 @@
           <div class="col-md-8 col-xs-12 col-sm-12">
             <div class="head-right">
               <div class="logo-m-seeker">
-                <div class="redes-seeker"> 
-                  <ul class="social-in" style="margin-top: 10px;">
-                    <li><a href="#"><i class="class">facebook</i></a></li>
-                    <li><a href="#"><i class="class">twitter</i></a></li>
-                    <li><a href="#"><i class="class">youtube</i></a></li>
-                    <li><a href="#"><i class="class">rs</i></a></li>
-                  </ul>
+                <div class="redes">
+                  <div class="item">
+                    <div class="icon-circle"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    <div class="icon-circle"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    <div class="icon-circle"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+                    <div class="icon-circle"><i class="fa fa-flickr" aria-hidden="true"></i></div>
+                  </div>
                 </div>
                 <div class="search">
                   <form>
@@ -188,8 +188,27 @@
         <h2>Nuestros Programas</h2>
         <hr class="line-title-seccion">
       </div>
-      <div class="lista-programas">
-        <p>Programa de </p>
+      <div class="content-programa">
+        <div class="programa">
+          <p>PROGRAMA DE  ___________</p><img src="img/home/programas/bosque.svg">
+          <h3>Bosques y Climas</h3>
+        </div>
+        <div class="programa">
+          <p>PROGRAMA DE  ___________</p><img src="img/home/programas/cipta.svg">
+          <h3>Bosques y Climas</h3>
+        </div>
+        <div class="programa">
+          <p>PROGRAMA DE  ___________</p><img src="img/home/programas/comunicacion.svg">
+          <h3>Bosques y Climas</h3>
+        </div>
+        <div class="programa">
+          <p>PROGRAMA DE  ___________</p><img src="img/home/programas/educacion.svg">
+          <h3>Bosques y Climas</h3>
+        </div>
+        <div class="programa">
+          <p>PROGRAMA DE  ___________</p><img src="img/home/programas/mujer.svg">
+          <h3>Bosques y Climas		</h3>
+        </div>
       </div>
     </section>
     <!--Organzaciones Regionales-->
@@ -283,12 +302,19 @@
     <section class="suscribete">
       <div class="container">
         <div class="row">
-          <div class="col-md-offset-2 col-md-4">
-            <h2>Suscribete</h2>
-            <p>Entérate de nuestras noticias</p>
+          <div class="col-md-offset-2 col-md-4 prom-subsc"><img src="img/icons/subsc.svg">
+            <div class="txt-subsc">
+              <h2>Suscribete</h2>
+              <p>Entérate de nuestras noticias</p>
+            </div>
           </div>
           <div class="col-md-4">
-            <p>buscador</p>
+            <div class="search">
+              <form>
+                <input type="text" value="Buscador" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                <input type="submit" value="Enviar">
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -298,11 +324,30 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <p>Asociacion Interamericana de Desarrollo de la Selva Peruana.</p>
-            <p>Av. San Eugenio 981. Santa Catalina - La Victoria.</p>
-            <p>Instutucional: aidesep@aidesep.net.pe</p>
-            <p>Comunicacion e incidencia: comunicaciones@aidesep.org.pe</p>
-            <p>(+51 1) 471 7118</p>
+            <div class="item">
+              <div class="icon-circle"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></div>
+              <div class="text-footer">
+                <p>Asociacion Interamericana de Desarrollo de la Selva Peruana.<br> Av. San Eugenio 981. Santa Catalina - La Victoria.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon-circle"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
+              <div class="text-footer">
+                <p>Instutucional: aidesep@aidesep.net.pe<br> Comunicacion e incidencia: comunicaciones@aidesep.org.pe</p>
+              </div>
+            </div>
+            <div class="item phone">
+              <div class="icon-circle"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></div>
+              <div class="text-footer">
+                <p>(+51 1) 471 7118</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon-circle"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></div>
+              <div class="icon-circle"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></div>
+              <div class="icon-circle"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></div>
+              <div class="icon-circle"><i class="fa fa-flickr fa-2x" aria-hidden="true"></i></div>
+            </div>
           </div>
           <div class="col-md-5">
             <div class="fb-page" data-href="https://www.facebook.com/aidesep/" data-tabs="timeline" data-width="350" data-height="300" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
