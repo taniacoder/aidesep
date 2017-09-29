@@ -170,6 +170,7 @@ padding: 30px;
     text-transform: uppercase;
     height: 187px;
 }
+
 /*nuestros programas*/
 .content-programa{
     padding: 25px;
@@ -181,6 +182,13 @@ padding: 30px;
         font-size: 25px;
         font-weight: bold;
     }
+}
+/*entidades*/
+.entidades {
+    padding: 15px 0;
+    background-image: url("../img/fondo-pasto.png");
+    background-repeat: no-repeat;
+    height: 160px;
 }
 /*Organzaciones Regionales*/
 .org-regionales {

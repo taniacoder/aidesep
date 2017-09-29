@@ -559,6 +559,13 @@ ul.social-in li i.rs {
     font-size: 25px;
     font-weight: bold; }
 
+/*entidades*/
+.entidades {
+  padding: 15px 0;
+  background-image: url("../img/fondo-pasto.png");
+  background-repeat: no-repeat;
+  height: 160px; }
+
 /*Organzaciones Regionales*/
 .org-regionales {
   background-color: #ccc; }
