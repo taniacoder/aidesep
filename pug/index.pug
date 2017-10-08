@@ -45,20 +45,16 @@ html
 					.col-md-8.col-xs-12.col-sm-12
 						.head-right
 							.logo-m-seeker
-								.redes-seeker 
-									ul(class="social-in" style="margin-top: 10px;")
-										li
-											a(href="#")
-												i.class="facebook"
-										li
-											a(href="#")
-												i.class="twitter"
-										li
-											a(href="#")
-												i.class="youtube"
-										li
-											a(href="#")
-												i.class="rs"
+								.redes
+									.item
+										.icon-circle
+											i.fa.fa-facebook(aria-hidden="true")
+										.icon-circle
+											i.fa.fa-twitter(aria-hidden="true")
+										.icon-circle
+											i.fa.fa-youtube(aria-hidden="true")
+										.icon-circle
+											i.fa.fa-flickr(aria-hidden="true")
 								.search
 									form
 										input(type='text', value='Buscador', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = '';}")
@@ -180,8 +176,28 @@ html
 			.container
 				h2 Nuestros Programas
 				hr.line-title-seccion
-			.lista-programas
-				p Programa de 
+			.content-programa
+				.programa
+					p PROGRAMA DE  ___________
+					img(src="img/home/programas/bosque.svg")
+					h3 Bosques y Climas
+				.programa
+					p PROGRAMA DE  ___________
+					img(src="img/home/programas/cipta.svg")
+					h3 Bosques y Climas
+				.programa
+					p PROGRAMA DE  ___________
+					img(src="img/home/programas/comunicacion.svg")
+					h3 Bosques y Climas
+				.programa
+					p PROGRAMA DE  ___________
+					img(src="img/home/programas/educacion.svg")
+					h3 Bosques y Climas
+				.programa
+					p PROGRAMA DE  ___________
+					img(src="img/home/programas/mujer.svg")
+					h3 Bosques y Climas
+				
 		//Organzaciones Regionales
 		section.org-regionales
 			.container
@@ -253,22 +269,51 @@ html
 		section.suscribete
 			.container
 				.row
-					.col-md-offset-2.col-md-4
-						h2 Suscribete
-						p Entérate de nuestras noticias
+					.col-md-offset-2.col-md-4.prom-subsc
+						img(src="img/icons/subsc.svg")
+						.txt-subsc
+							h2 Suscribete
+							p Entérate de nuestras noticias
 					.col-md-4
-						p buscador
+						.search
+							form
+								input(type='text', value='Buscador', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = '';}")
+								input(type='submit', value='Enviar')
 		//footer
 		section.footer
 			.container
 				.row
 					.col-md-7
-						p Asociacion Interamericana de Desarrollo de la Selva Peruana.
-						p Av. San Eugenio 981. Santa Catalina - La Victoria.
-						p Instutucional: aidesep@aidesep.net.pe
-						p Comunicacion e incidencia: comunicaciones@aidesep.org.pe
-						p (+51 1) 471 7118
-
+						.item
+							.icon-circle
+								i.fa.fa-map-marker.fa-2x(aria-hidden="true")
+							.text-footer
+								p
+									| Asociacion Interamericana de Desarrollo de la Selva Peruana.
+									br
+									|  Av. San Eugenio 981. Santa Catalina - La Victoria.
+						.item
+							.icon-circle
+								i.fa.fa-envelope.fa-2x(aria-hidden="true")
+							.text-footer
+								p
+									| Instutucional: aidesep@aidesep.net.pe
+									br
+									|  Comunicacion e incidencia: comunicaciones@aidesep.org.pe
+						.item.phone
+							.icon-circle
+								i.fa.fa-phone.fa-2x(aria-hidden="true")
+							.text-footer
+								p (+51 1) 471 7118
+						.item
+							.icon-circle
+								i.fa.fa-facebook.fa-2x(aria-hidden="true")
+							.icon-circle
+								i.fa.fa-twitter.fa-2x(aria-hidden="true")
+							.icon-circle
+								i.fa.fa-youtube.fa-2x(aria-hidden="true")
+							.icon-circle
+								i.fa.fa-flickr.fa-2x(aria-hidden="true")
 					.col-md-5
 						.fb-page(data-href='https://www.facebook.com/aidesep/', data-tabs='timeline', data-width="350" data-height='300', data-small-header='false', data-adapt-container-width='false', data-hide-cover='false', data-show-facepile='true')
 							blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/aidesep/')
