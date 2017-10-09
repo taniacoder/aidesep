@@ -63,11 +63,15 @@ ul {
 }
 
 /*redes*/
+
 .redes{
+	font-size: 18px;
 	.icon-circle {
-	height: 30px;
-    width: 30px;
+	height: 32px;
+    width: 32px;
     background-color: #007F48;
+    padding: 3px;
+    margin: 6px;
         i{
             color: #fff;
         }
@@ -266,9 +270,6 @@ border: none;
 		    padding: 14px 0px;
 			}
 		}
-	}
-	.navbar-default {
-	    background-color: #3C7B19;
 	}
 
 }

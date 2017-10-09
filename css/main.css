@@ -84,24 +84,24 @@ body {
   body a {
     -webkit-transition: 0.3s all; }
 
-@media (min-width: 1200px) {
-  /*.container { 
+/*.container { 
     width: 1300px;
 }*/
-  /*aidesep communs*/
-  .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .icon-circle {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin: 10px;
-    text-align: center;
-    padding: 5px; }
-  /*//*/ }
+/*aidesep communs*/
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
+.icon-circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 10px;
+  text-align: center;
+  padding: 5px; }
+
+/*//*/
 .circle-item {
   border: 4px solid #579f33;
   height: 8px;
@@ -184,12 +184,16 @@ ul {
           align-items: center; }
 
 /*redes*/
-.redes .icon-circle {
-  height: 30px;
-  width: 30px;
-  background-color: #007F48; }
-  .redes .icon-circle i {
-    color: #fff; }
+.redes {
+  font-size: 18px; }
+  .redes .icon-circle {
+    height: 32px;
+    width: 32px;
+    background-color: #007F48;
+    padding: 3px;
+    margin: 6px; }
+    .redes .icon-circle i {
+      color: #fff; }
 
 .redes-seeker {
   padding: 10px 0 15px; }
@@ -379,9 +383,7 @@ ul.social-in li i.rs {
         border: none;
         font-size: 15px;
         color: #ffffff;
-        padding: 14px 0px; }
-  .navbar-default {
-    background-color: #3C7B19; } }
+        padding: 14px 0px; } }
 
 @media (max-width: 560px) {
   .head-right .redes-seeker ul {
@@ -446,7 +448,7 @@ ul.social-in li i.rs {
 .banner-text {
   position: absolute;
   z-index: 100;
-  bottom: 60px;
+  bottom: 25px;
   left: 0;
   right: 0;
   text-align: center; }
@@ -464,9 +466,10 @@ ul.social-in li i.rs {
   padding: 10px; }
   .box-trans h2 {
     font-weight: bold;
-    font-size: 35px; }
+    margin-top: 5px; }
   .box-trans h3 {
-    font-size: 20px; }
+    font-size: 20px;
+    margin-top: 5px; }
 
 /*medias*/
 @media (max-width: 768px) {
@@ -477,7 +480,7 @@ ul.social-in li i.rs {
     width: 100%; }
   .box-trans {
     width: auto;
-    background-color: #3c7b19; }
+    background-color: #007f48; }
   .banner-text {
     position: absolute;
     z-index: 100;
@@ -485,7 +488,7 @@ ul.social-in li i.rs {
     left: 0;
     right: 0;
     text-align: center;
-    background-color: #3c7b19;
+    background-color: #007f48;
     padding-bottom: 50px; }
   .banner-text {
     position: relative; }

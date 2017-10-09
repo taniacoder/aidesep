@@ -44,7 +44,7 @@ opacity: 0.5;
 .banner-text {
     position: absolute;
     z-index: 100;
-    bottom: 60px;
+    bottom: 25px;
     left: 0;
     right: 0;
     text-align: center;
@@ -63,10 +63,11 @@ opacity: 0.5;
     padding: 10px;
 	h2 {
 	 font-weight: bold;
-  font-size: 35px;
+     margin-top: 5px;
 	}
   h3 {
     font-size: 20px;
+    margin-top: 5px;
   }
 }
 
@@ -84,7 +85,7 @@ opacity: 0.5;
 	}
 	.box-trans {
 	    width: auto;
-    background-color: #3c7b19;
+    background-color: #007f48;
 	}
 	.banner-text {
     position: absolute;
@@ -93,7 +94,7 @@ opacity: 0.5;
     left: 0;
     right: 0;
     text-align: center;
-    background-color: #3c7b19;
+    background-color: #007f48;
     padding-bottom: 50px;
 	}
 	.banner-text{ position: relative;
