@@ -7,9 +7,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!--bootstrap-->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
     <!-- animate.css-->
     <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <!--slick slider css-->
+    <link href="css/slick.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css" media="all">
     <!-- mystyles-->
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
     <!-- fonts-->
@@ -17,12 +19,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--favicon-->
     <link rel="shortcut icon" href="img/favicon.ico">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>new WOW().init();</script>
-    <script src="js/bootstrap.min.js"></script>
   </head>
   <body> 
     <div id="fb-root"></div>
@@ -183,12 +179,32 @@
       </div>
     </section>
     <!--Nuestros Programas-->
-    <section class="programas">
+    <div class="programa">
       <div class="container">
         <h2>Nuestros Programas</h2>
         <hr class="line-title-seccion">
       </div>
-      <div class="content-programa">
+      <div class="responsive content-programa">
+        <div class="programa">
+          <p>PROGRAMA DE  ___________</p><img src="img/home/programas/bosque.svg">
+          <h3>Bosques y Climas</h3>
+        </div>
+        <div class="programa">
+          <p>PROGRAMA DE  ___________</p><img src="img/home/programas/cipta.svg">
+          <h3>Bosques y Climas</h3>
+        </div>
+        <div class="programa">
+          <p>PROGRAMA DE  ___________</p><img src="img/home/programas/comunicacion.svg">
+          <h3>Bosques y Climas</h3>
+        </div>
+        <div class="programa">
+          <p>PROGRAMA DE  ___________</p><img src="img/home/programas/educacion.svg">
+          <h3>Bosques y Climas</h3>
+        </div>
+        <div class="programa">
+          <p>PROGRAMA DE  ___________</p><img src="img/home/programas/mujer.svg">
+          <h3>Bosques y Climas</h3>
+        </div>
         <div class="programa">
           <p>PROGRAMA DE  ___________</p><img src="img/home/programas/bosque.svg">
           <h3>Bosques y Climas</h3>
@@ -210,7 +226,7 @@
           <h3>Bosques y Climas</h3>
         </div>
       </div>
-    </section>
+    </div>
     <!--Organzaciones Regionales-->
     <section class="org-regionales">
       <div class="container">
@@ -357,5 +373,22 @@
         </div>
       </div>
     </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <script src="js/jquery.min.js"></script>
+    <!--slick slider js-->
+    <script src="js/slick.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      $('.responsive').slick({
+      setting-name: setting-value
+      });
+      });
+      
+    </script>
+    <!--my js-->
+    <script src="js/min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
