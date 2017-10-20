@@ -205,6 +205,7 @@ ul.social-in li i.rs {
 	    }
 	}
 }
+
 /*.nav-flex li {
     background: url(../images/hover-menu.png) bottom center no-repeat;
     color: #000;
@@ -220,6 +221,35 @@ ul.social-in li i.rs {
     color: #fff;
     font-weight: 900;
 }
+
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+    background-color: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: none;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	li {
+		background-color: #605050;
+		justify-content: left;
+		&:hover, &:focus {
+			background-color: #D27C05;
+			color: #fff
+		}
+		a {
+		font-size: 13px;
+		padding: 10px 10px;
+		&:hover, &:focus {
+			background: top;
+			}
+		}
+	}
+}
+
 /*-hover-end--*/
 .navbar-header .redes-seeker {
 	display: none;
