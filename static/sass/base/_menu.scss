@@ -67,10 +67,10 @@ ul {
 .redes{
 	font-size: 18px;
 	.icon-circle {
-	height: 32px;
-    width: 32px;
+	height: 35px;
+    width: 35px;
     background-color: #007F48;
-    padding: 3px;
+    padding: 4px;
     margin: 6px;
         i{
             color: #fff;
@@ -194,7 +194,7 @@ ul.social-in li i.rs {
 		a {
 		text-decoration: none;
 	    border: none;
-	    font-size: 16.5px;
+	    font-size: 14px;
 	    color: #ffffff;
 	    padding: 14px 10px;
 	    font-weight: bold;
@@ -217,7 +217,7 @@ ul.social-in li i.rs {
 
 */
 .nav-flex li:hover {
-	background: #605050;
+	background: #544E3E;
     color: #fff;
     font-weight: 900;
 }
@@ -234,7 +234,7 @@ ul.social-in li i.rs {
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 	li {
-		background-color: #605050;
+		background-color: #544E3E;
 		justify-content: left;
 		&:hover, &:focus {
 			background-color: #D27C05;

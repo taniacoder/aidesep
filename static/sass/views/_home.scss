@@ -41,7 +41,7 @@ opacity: 0.5;
     background-color: #579E32;
 }
 
-.banner-text {
+.carousel-inner .banner-text {
     position: absolute;
     z-index: 100;
     bottom: 25px;
@@ -55,7 +55,7 @@ opacity: 0.5;
     color: #fff;
 }*/
 
-.box-trans {
+.carousel-inner .box-trans {
 	color: #fff;
     background-color: rgba(0, 127, 72, 0.63);
     margin: auto;

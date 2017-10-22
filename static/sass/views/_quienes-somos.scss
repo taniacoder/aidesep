@@ -1,0 +1,83 @@
+//banner
+.banner-interna{
+    position: relative;
+}
+.banner-interna .banner-text {
+    position: absolute;
+    z-index: 100;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+/*.banner-text a.btn {
+    background-color: #ec8b00;
+    border-color: #ec8b00;
+    color: #fff;
+}*/
+
+.banner-interna .box-trans {
+	color: #fff;
+    background-color: rgba(0, 127, 72, 0.63);
+    margin: auto;
+    width: 36%;
+    padding: 10px;
+	h2 {
+	 font-weight: bold;
+     margin-top: 5px;
+     font-size: 38px;
+	}
+}
+//quienes somos
+//multimedia
+.box-descarga{
+    display: flex;
+    margin: 10px 0;
+}
+.title-descarga {
+    background: #f2f2f2;
+    padding: 20px;
+    height: 65px;
+    width: 90%;
+}
+.icon-descarga {
+    background-color: #007f48;
+    height: 65px;
+    padding: 6px 10px;
+    i{
+        color: #fff;
+    }
+}
+//nuestrotrabajo
+.nuestro-trabajo {
+   h3{ color: $verde;
+    }
+   h4 {
+     color: $verde;
+     font-weight: bold;
+   } 
+}
+.logros {
+    margin-top: 50px;
+    ol{
+        margin-left: 30px;
+    }
+}
+//contact
+.cambiarsede {
+    select {
+    background-color: #683B11;
+    border: none;
+    padding: 10px 86px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px; 
+    }
+}
+.ubicacion-mapa {
+    margin-top: 4%;
+    border-top: solid 1.5px #ccc;
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
