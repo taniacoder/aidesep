@@ -93,3 +93,99 @@
     background-color: #93B777;
     padding: 15px 0;
 }
+.valor{
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+    .num {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: #0A5020;
+        color: #fff;
+        z-index: 10;
+        position: relative;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .vtext {
+        border-radius: 50px;
+        width: 200px;
+        height: 50px;
+        background-color: #fff;
+        color: #0A5020;
+        position: absolute;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+//nuestrhistoria
+button.accordion {
+    background-color: #007F48;
+    color: #fff;
+    cursor: pointer;
+    padding: 11px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #0A5020;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    p {
+        padding: 10px 0;
+    }
+}
+
+//Consejo Directivo
+.representantes {
+    display: flex;
+    .col-md-6 {
+    display: flex;
+    }
+}
+.content-circle {
+    text-align: center;
+    margin: auto;
+    text-align: center;
+    max-width: 350px;
+    img {
+        border-radius: 50%;
+        border: 8px solid #ccc;
+        padding: 10px;
+    }
+    h4 {
+        color: #696969;
+    }
+    p{
+       color: #007F48;
+         font-weight: bold; 
+    }
+}
+//

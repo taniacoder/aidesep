@@ -32,88 +32,9 @@ html
 			}(document, 'script', 'facebook-jssdk'));
 
 
-		section.header
-			.container
-				.row
-					.col-md-4.col-xs-12.col-sm-12
-						img(width='70%' src='img/home/logo.png')
-					.col-md-8.col-xs-12.col-sm-12
-						.head-right
-							.logo-m-seeker
-								.redes
-									.item
-										.icon-circle
-											i.fa.fa-facebook(aria-hidden="true")
-										.icon-circle
-											i.fa.fa-twitter(aria-hidden="true")
-										.icon-circle
-											i.fa.fa-youtube(aria-hidden="true")
-										.icon-circle
-											i.fa.fa-flickr(aria-hidden="true")
-								.search
-									form
-										input(type='text', value='Buscador', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = '';}")
-										input(type='submit', value='BUSCADOR')
-		section.menu
-			nav.navbar.navbar-default
-				.container
-					// Brand and toggle get grouped for better mobile display
-					.navbar-header
-						button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-							span.sr-only Toggle navigation
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-						.redes-seeker.collapsed
-							ul.social-in
-								li
-									a(href='#')
-										i.facebook  
-								li
-									a(href='#')
-										i.twitter  
-								li
-									a(href='#')
-										i.youtube  
-								li
-									a(href='#')
-										i.rs  
-					// Collect the nav links, forms, and other content for toggling
-					#bs-example-navbar-collapse-1.collapse.navbar-collapse
-						ul.nav-flex
-							li
-								a(href='#') INICIO
-							li.dropdown
-								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-									| NOSOTROS
-									span.caret
-								ul.dropdown-menu
-									li
-										a(href='#') QUIENENS SOMOS
-									li
-										a(href='#') NUESTRA HISTORIA
-									li
-										a(href='#') MÍSION Y VÍSION
-									li
-										a(href='#') CONSEJO DIRECTIVO
-									li
-										a(href='#') 
-											|ORGANIZACIONES 
-											br
-											| REGIONALES
-									li
-										a(href='#') QUÉ QUEREMOS
-							li
-								a(href='#') NUESTRO TRABAJO
-							li
-								a(href='#') NOTICIAS
-							li
-								a(href='#') MULTIMEDIA
-							li
-								a(href='#') CONTACTO
-
-					// /.navbar-collapse
-				// /.container-fluid
+		//header
+		include includes/header.pug
+		
 		section.banner-interna
 			.item
 				img(src='img/quienes-somos.jpg', width="100%" alt='')
@@ -213,44 +134,8 @@ html
 								input(type='text', value='Buscador', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = '';}")
 								input(type='submit', value='Enviar')
 		//footer
-		section.footer
-			.container
-				.row
-					.col-md-7
-						.item
-							.icon-circle
-								i.fa.fa-map-marker.fa-2x(aria-hidden="true")
-							.text-footer
-								p
-									| Asociacion Interamericana de Desarrollo de la Selva Peruana.
-									br
-									|  Av. San Eugenio 981. Santa Catalina - La Victoria.
-						.item
-							.icon-circle
-								i.fa.fa-envelope.fa-2x(aria-hidden="true")
-							.text-footer
-								p
-									| Instutucional: aidesep@aidesep.net.pe
-									br
-									|  Comunicacion e incidencia: comunicaciones@aidesep.org.pe
-						.item.phone
-							.icon-circle
-								i.fa.fa-phone.fa-2x(aria-hidden="true")
-							.text-footer
-								p (+51 1) 471 7118
-						.item
-							.icon-circle
-								i.fa.fa-facebook.fa-2x(aria-hidden="true")
-							.icon-circle
-								i.fa.fa-twitter.fa-2x(aria-hidden="true")
-							.icon-circle
-								i.fa.fa-youtube.fa-2x(aria-hidden="true")
-							.icon-circle
-								i.fa.fa-flickr.fa-2x(aria-hidden="true")
-					.col-md-5
-						.fb-page(data-href='https://www.facebook.com/aidesep/', data-tabs='timeline', data-width="350" data-height='300', data-small-header='false', data-adapt-container-width='false', data-hide-cover='false', data-show-facepile='true')
-							blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/aidesep/')
-								a(href='https://www.facebook.com/aidesep/') Aidesep Pueblos Indígenas
+		include includes/footer.pug
+
 		// jQuery (necessary for Bootstrap's JavaScript plugins)
 		script(src='js/jquery.min.js')
 		//slick slider js
