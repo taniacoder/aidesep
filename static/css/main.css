@@ -808,3 +808,19 @@ div.panel {
   .content-circle p {
     color: #007F48;
     font-weight: bold; }
+
+.content-fotos {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.elemento-foto {
+  width: 450px; }
+  .elemento-foto a :hover {
+    background-color: #ccc; }

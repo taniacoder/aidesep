@@ -188,4 +188,19 @@ div.panel {
          font-weight: bold; 
     }
 }
-//
+
+
+//fotogaleria
+    .content-fotos {
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        display: flex;
+    }
+    .elemento-foto {
+        width: 450px;
+        a {
+            :hover {
+                background-color: #ccc;
+            }
+        }
+    }

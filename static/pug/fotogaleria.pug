@@ -1,0 +1,168 @@
+doctype html
+html
+	head
+		title AIDESEP
+		meta(name='keywords', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		//bootstrap
+		link(href='css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+		// animate.css
+		link(href='css/animate.css', rel='stylesheet', type='text/css', media='all')
+		//slick slider css
+		link(href='css/slick.css', rel='stylesheet', type='text/css', media='all')
+		link(href='css/slick-theme.css', rel='stylesheet', type='text/css', media='all')
+		// mystyles 
+		link(href='css/main.css', rel='stylesheet', type='text/css', media='all')
+		// fonts
+		link(href='css/fonts.css', rel='stylesheet', type='text/css')
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		//favicon
+		link(rel="shortcut icon",href="img/favicon.ico")
+	body 
+		#fb-root
+		script.
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.10";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+
+
+		//header
+		include includes/header.pug
+		
+		section.banner-interna
+			.item
+				img(src='img/quienes-somos.jpg', width="100%" alt='')
+				.banner-text
+					.box-trans
+						h1 Quiénes Somos
+								
+		//fotogaleria
+		section.fotogaleria
+			.container-fluid
+				.row
+					.content-fotos.gallery
+						.elemento-foto
+							a(href="#" data-image-id="" data-toggle="modal" data-image="img/fotogaleria/img1.png" data-target="#image-gallery")
+								img(src='img/fotogaleria/img1.png', width="100%" alt='')
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img2.png', width="100%" alt='')
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img3.png', width="100%" alt='')
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img5.png', width="100%" alt='')
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img4.png', width="100%" alt='')
+					.content-fotos
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img3.png', width="100%" alt='')
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img4.png', width="100%" alt='')
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img2.png', width="100%" alt='')
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img1.png', width="100%" alt='')
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img5.png', width="100%" alt='')
+					.content-fotos
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img1.png', width="100%" alt='')
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img2.png', width="100%" alt='')
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img3.png', width="100%" alt='')
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img5.png', width="100%" alt='')
+						.elemento-foto
+							a(href="#")
+								img(src='img/fotogaleria/img4.png', width="100%" alt='')
+
+		#image-gallery.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+			.modal-dialog
+				.modal-content
+					.modal-header
+						button.close(type='button', data-dismiss='modal')
+							span(aria-hidden='true') ×
+							span.sr-only Close
+						h4#image-gallery-title.modal-title
+					.modal-body
+						img#image-gallery-image.img-responsive(src='')
+					.modal-footer
+						.col-md-2
+							button#show-previous-image.btn.btn-primary(type='button') Previous
+						#image-gallery-caption.col-md-8.text-justify
+							| This text will be overwritten by jQuery
+						.col-md-2
+							button#show-next-image.btn.btn-default(type='button') Next
+
+
+		//entidades
+		section.entidades
+			.container
+				.row
+					.responsive2
+						div.col-md-3
+							img(src="img/home/ap1.png")
+						div.col-md-3
+							img(src="img/home/ap2.png")
+						div.col-md-3
+							img(src="img/home/ap3.png")
+						div.col-md-3
+							img(src="img/home/ap4.png")
+						div.col-md-3
+							img(src="img/home/ap5.png")
+						div.col-md-3
+							img(src="img/home/ap6.png")
+						div.col-md-3
+							img(src="img/home/ap7.png")
+		//suscribirse
+		section.suscribete
+			.container
+				.row
+					.col-md-offset-2.col-md-4.prom-subsc
+						img(src="img/icons/subsc.svg")
+						.txt-subsc
+							h2 Suscribete
+							p Entérate de nuestras noticias
+					.col-md-4
+						.search
+							form
+								input(type='text', value='Buscador', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = '';}")
+								input(type='submit', value='Enviar')
+		//footer
+		include includes/footer.pug
+
+		// jQuery (necessary for Bootstrap's JavaScript plugins)
+		script(src='js/jquery.min.js')
+		//slick slider js
+		script(src='js/slick.js')
+		script(type='text/javascript').
+				$(document).ready(function(){
+				$('.responsive').slick({
+				setting-name: setting-value
+				});
+				});
+
+		//my js
+		script(src='js/min.js')
+		script(src="js/wow.min.js")
+		script.
+			new WOW().init();
+		script(src='js/bootstrap.min.js')
