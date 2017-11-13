@@ -41,46 +41,9 @@ html
 			.container-fluid
 				.row
 					.content-fotos
-						.elemento-foto
-							img(class="img-element" src="img/fotogaleria/img1.png", alt="", width="100%" )
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img2.png', width="100%" alt='')
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img3.png', width="100%" alt='')
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img5.png', width="100%" alt='')
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img4.png', width="100%" alt='')
-					.content-fotos
-						.elemento-foto
-							img(class="img-element" src="img/fotogaleria/img1.png", alt="", width="100%" )
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img2.png', width="100%" alt='')
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img3.png', width="100%" alt='')
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img5.png', width="100%" alt='')
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img4.png', width="100%" alt='')
-					.content-fotos
-						.elemento-foto
-							img(class="img-element" src="img/fotogaleria/img1.png", alt="", width="100%" )
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img2.png', width="100%" alt='')
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img3.png', width="100%" alt='')
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img5.png', width="100%" alt='')
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img4.png', width="100%" alt='')
-
-						#modal-img
-							#modal-img__close ×
-							#modal-img__content
-								img
-								#modal-img__caption
-  
-
+						figure
+							a.movie-tile(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+								img(src='img/fotogaleria/img4.png', alt='', width='100%')
 
 
 		//entidades
@@ -118,11 +81,9 @@ html
 								input(type='submit', value='Enviar')
 		//footer
 		include includes/footer.pug
-		script(src='js/poopup.js')
+
 		// jQuery (necessary for Bootstrap's JavaScript plugins)
 		script(src='js/jquery.min.js')
-		//my js
-		script(src='js/min.js')
 		//slick slider js
 		script(src='js/slick.js')
 		script(type='text/javascript').

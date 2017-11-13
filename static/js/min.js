@@ -88,60 +88,27 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 
-//fotogaleria
-$(document).ready(function(){
-
-    loadGallery(true, 'a.thumbnail');
-
-    //This function disables buttons when needed
-    function disableButtons(counter_max, counter_current){
-        $('#show-previous-image, #show-next-image').show();
-        if(counter_max == counter_current){
-            $('#show-next-image').hide();
-        } else if (counter_current == 1){
-            $('#show-previous-image').hide();
-        }
-    }
-
-    /**
-     *
-     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
-     * @param setClickAttr  Sets the attribute for the click handler.
-     */
-
-    function loadGallery(setIDs, setClickAttr){
-        var current_image,
-            selector,
-            counter = 0;
-
-        $('#show-next-image, #show-previous-image').click(function(){
-            if($(this).attr('id') == 'show-previous-image'){
-                current_image--;
-            } else {
-                current_image++;
-            }
-
-            selector = $('[data-image-id="' + current_image + '"]');
-            updateGallery(selector);
-        });
-
-        function updateGallery(selector) {
-            var $sel = selector;
-            current_image = $sel.data('image-id');
-            $('#image-gallery-caption').text($sel.data('caption'));
-            $('#image-gallery-title').text($sel.data('title'));
-            $('#image-gallery-image').attr('src', $sel.data('image'));
-            disableButtons(counter, $sel.data('image-id'));
-        }
-
-        if(setIDs == true){
-            $('[data-image-id]').each(function(){
-                counter++;
-                $(this).attr('data-image-id',counter);
-            });
-        }
-        $(setClickAttr).on('click',function(){
-            updateGallery($(this));
-        });
-    }
+//modal video
+// Pause the video when the modal is closed
+$(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+  // Remove the src so the player itself gets removed, as this is the only
+  // reliable way to ensure the video stops playing in IE
+  $("#trailer-video-container").empty();
+});
+// Start playing the video whenever the trailer modal is opened
+$(document).on('click', '.movie-tile', function (event) {
+  var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+  var sourceUrl = 'https://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+  $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+    'id': 'trailer-video',
+    'type': 'text-html',
+    'src': sourceUrl,
+    'frameborder': 0
+  }));
+});
+// Animate in the movies when the page loads
+$(document).ready(function () {
+  $('.movie-tile').hide().first().show("fast", function showNext() {
+    $(this).next("div").show("fast", showNext);
+  });
 });

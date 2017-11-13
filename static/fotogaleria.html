@@ -1,24 +1,24 @@
-<!DOCTYPE html>
+
 <html>
   <head>
     <title>AIDESEP</title>
-    <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!--bootstrap-->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- animate.css-->
-    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all"/>
     <!--slick slider css-->
-    <link href="css/slick.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/slick-theme.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/slick.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- mystyles -->
-    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- fonts-->
-    <link href="css/fonts.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <!--favicon-->
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico"/>
   </head>
   <body> 
     <div id="fb-root"></div>
@@ -37,7 +37,7 @@
     <section class="header">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-xs-12 col-sm-12"><img width="70%" src="img/home/logo.png"></div>
+          <div class="col-md-4 col-xs-12 col-sm-12"><img width="70%" src="img/home/logo.png"/></div>
           <div class="col-md-8 col-xs-12 col-sm-12">
             <div class="head-right">
               <div class="logo-m-seeker">
@@ -51,8 +51,8 @@
                 </div>
                 <div class="search">
                   <form>
-                    <input type="text" value="Buscador" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-                    <input type="submit" value="BUSCADOR">
+                    <input type="text" value="Buscador" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"/>
+                    <input type="submit" value="BUSCADOR"/>
                   </form>
                 </div>
               </div>
@@ -87,13 +87,20 @@
                   <li><a href="misionyvision.html">> MÍSION Y VÍSION</a></li>
                   <li><a href="consejo-directivo.html">> CONSEJO DIRECTIVO</a></li>
                   <li><a href="#">
-                       > ORGANIZACIONES <br>REGIONALES</a></li>
+                       > ORGANIZACIONES <br/>REGIONALES</a></li>
                   <li><a href="#">> QUÉ QUEREMOS</a></li>
                 </ul>
               </li>
               <li><a href="nuestro-trabajo.html">NUESTRO TRABAJO</a></li>
               <li><a href="noticias.html">NOTICIAS</a></li>
-              <li><a href="multimedia.html">MULTIMEDIA</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MULTIMEDIA<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="multimedia.html">
+                      > PUBLICACIONES <br/>Y MATERIALES</a></li>
+                  <li><a href="fotogaleria.html">> GALERIA</a></li>
+                  <li><a href="videos.html">> VIDEOS</a></li>
+                </ul>
+              </li>
               <li><a href="contactenos.html">CONTACTO</a></li>
             </ul>
           </div>
@@ -102,75 +109,51 @@
         <!-- /.container-fluid-->
       </nav>
     </section>
-    <section class="banner-interna">
-      <div class="item"><img src="img/quienes-somos.jpg" width="100%" alt="">
-        <div class="banner-text">
-          <div class="box-trans">
-            <h1>Quiénes Somos</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--fotogaleria-->
     <section class="fotogaleria">
       <div class="container-fluid">
         <div class="row">
-          <div class="content-fotos gallery">
-            <div class="elemento-foto"><a href="#" data-image-id="" data-toggle="modal" data-image="img/fotogaleria/img1.png" data-target="#image-gallery"><img src="img/fotogaleria/img1.png" width="100%" alt=""></a></div>
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img2.png" width="100%" alt=""></a></div>
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img3.png" width="100%" alt=""></a></div>
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img5.png" width="100%" alt=""></a></div>
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img4.png" width="100%" alt=""></a></div>
+          <div class="content-fotos">
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img1.png" alt="" width="100%"/></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img2.png" width="100%" alt=""/></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img3.png" width="100%" alt=""/></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img5.png" width="100%" alt=""/></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img4.png" width="100%" alt=""/></div>
           </div>
           <div class="content-fotos">
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img3.png" width="100%" alt=""></a></div>
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img4.png" width="100%" alt=""></a></div>
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img2.png" width="100%" alt=""></a></div>
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img1.png" width="100%" alt=""></a></div>
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img5.png" width="100%" alt=""></a></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img1.png" alt="" width="100%"/></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img2.png" width="100%" alt=""/></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img3.png" width="100%" alt=""/></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img5.png" width="100%" alt=""/></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img4.png" width="100%" alt=""/></div>
           </div>
           <div class="content-fotos">
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img1.png" width="100%" alt=""></a></div>
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img2.png" width="100%" alt=""></a></div>
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img3.png" width="100%" alt=""></a></div>
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img5.png" width="100%" alt=""></a></div>
-            <div class="elemento-foto"><a href="#"><img src="img/fotogaleria/img4.png" width="100%" alt=""></a></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img1.png" alt="" width="100%"/></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img2.png" width="100%" alt=""/></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img3.png" width="100%" alt=""/></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img5.png" width="100%" alt=""/></div>
+            <div class="elemento-foto"><img class="img-element" src="img/fotogaleria/img4.png" width="100%" alt=""/></div>
+            <div id="modal-img">
+              <div id="modal-img__close">×</div>
+              <div id="modal-img__content"><img/>
+                <div id="modal-img__caption"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="image-gallery-title"></h4>
-          </div>
-          <div class="modal-body"><img class="img-responsive" id="image-gallery-image" src=""></div>
-          <div class="modal-footer">
-            <div class="col-md-2">
-              <button class="btn btn-primary" id="show-previous-image" type="button">Previous</button>
-            </div>
-            <div class="col-md-8 text-justify" id="image-gallery-caption">This text will be overwritten by jQuery</div>
-            <div class="col-md-2">
-              <button class="btn btn-default" id="show-next-image" type="button">Next</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!--entidades-->
     <section class="entidades">
       <div class="container">
         <div class="row">
           <div class="responsive2">
-            <div class="col-md-3"><img src="img/home/ap1.png"></div>
-            <div class="col-md-3"><img src="img/home/ap2.png"></div>
-            <div class="col-md-3"><img src="img/home/ap3.png"></div>
-            <div class="col-md-3"><img src="img/home/ap4.png"></div>
-            <div class="col-md-3"><img src="img/home/ap5.png"></div>
-            <div class="col-md-3"><img src="img/home/ap6.png"></div>
-            <div class="col-md-3"><img src="img/home/ap7.png"></div>
+            <div class="col-md-3"><img src="img/home/ap1.png"/></div>
+            <div class="col-md-3"><img src="img/home/ap2.png"/></div>
+            <div class="col-md-3"><img src="img/home/ap3.png"/></div>
+            <div class="col-md-3"><img src="img/home/ap4.png"/></div>
+            <div class="col-md-3"><img src="img/home/ap5.png"/></div>
+            <div class="col-md-3"><img src="img/home/ap6.png"/></div>
+            <div class="col-md-3"><img src="img/home/ap7.png"/></div>
           </div>
         </div>
       </div>
@@ -179,7 +162,7 @@
     <section class="suscribete">
       <div class="container">
         <div class="row">
-          <div class="col-md-offset-2 col-md-4 prom-subsc"><img src="img/icons/subsc.svg">
+          <div class="col-md-offset-2 col-md-4 prom-subsc"><img src="img/icons/subsc.svg"/>
             <div class="txt-subsc">
               <h2>Suscribete</h2>
               <p>Entérate de nuestras noticias</p>
@@ -188,8 +171,8 @@
           <div class="col-md-4">
             <div class="search">
               <form>
-                <input type="text" value="Buscador" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-                <input type="submit" value="Enviar">
+                <input type="text" value="Buscador" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"/>
+                <input type="submit" value="Enviar"/>
               </form>
             </div>
           </div>
@@ -204,13 +187,13 @@
             <div class="item">
               <div class="icon-circle"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></div>
               <div class="text-footer">
-                <p>Asociacion Interamericana de Desarrollo de la Selva Peruana.<br> Av. San Eugenio 981. Santa Catalina - La Victoria.</p>
+                <p>Asociacion Interamericana de Desarrollo de la Selva Peruana.<br/> Av. San Eugenio 981. Santa Catalina - La Victoria.</p>
               </div>
             </div>
             <div class="item">
               <div class="icon-circle"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
               <div class="text-footer">
-                <p>Instutucional: aidesep@aidesep.net.pe<br> Comunicacion e incidencia: comunicaciones@aidesep.org.pe</p>
+                <p>Instutucional: aidesep@aidesep.net.pe<br/> Comunicacion e incidencia: comunicaciones@aidesep.org.pe</p>
               </div>
             </div>
             <div class="item phone">
@@ -234,17 +217,18 @@
         </div>
       </div>
     </section>
+    <script src="js/poopup.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
     <script src="js/jquery.min.js"></script>
+    <!--my js-->
+    <script src="js/min.js"></script>
     <!--slick slider js-->
     <script src="js/slick.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
       $('.responsive').slick({
-      setting-name: setting-value
       });
       });
-      
     </script>
     <!--my js-->
     <script src="js/min.js"></script>

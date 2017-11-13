@@ -73,8 +73,20 @@ section.menu
             a(href='nuestro-trabajo.html') NUESTRO TRABAJO
           li
             a(href='noticias.html') NOTICIAS
-          li
-            a(href='multimedia.html') MULTIMEDIA
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+              | MULTIMEDIA
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='multimedia.html') > 
+                  | PUBLICACIONES 
+                  br
+                  | Y MATERIALES
+              li
+                a(href='fotogaleria.html') > GALERIA
+              li
+                a(href='videos.html') > VIDEOS
           li
             a(href='contactenos.html') CONTACTO
 
