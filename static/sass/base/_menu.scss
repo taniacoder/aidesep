@@ -236,6 +236,7 @@ ul.social-in li i.rs {
 	li {
 		background-color: #544E3E;
 		justify-content: left;
+		max-width: 185px;
 		&:hover, &:focus {
 			background-color: #D27C05;
 			color: #fff

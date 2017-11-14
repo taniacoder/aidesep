@@ -20,7 +20,7 @@
 	color: #fff;
     background-color: rgba(0, 127, 72, 0.63);
     margin: auto;
-    width: 36%;
+    width: 26%;
     padding: 10px;
 	h2 {
 	 font-weight: bold;
@@ -91,6 +91,7 @@
 }
 .valores {
     background-color: #93B777;
+    background-image: url("../img/misionyvision/bg-verde.png");
     padding: 15px 0;
 }
 .valor{
@@ -125,7 +126,7 @@ button.accordion {
     background-color: #007F48;
     color: #fff;
     cursor: pointer;
-    padding: 11px;
+    padding: 11px 40px;
     width: 100%;
     border: none;
     text-align: left;
@@ -325,5 +326,59 @@ div.panel {
     padding: 5px 0;
     &:hover {
       text-decoration: none;
+    }
+}
+
+///*organizaciones-regionales*////
+.bloque-org-regional {
+    margin-bottom: 30px;
+    h2 {
+        color: #00491b;
+        font-weight: bold;
+        font-size: 34px;
+    }
+    h3 {
+        font-weight: bold;
+        margin: 0px 0px 22px;
+        color: #3C3C3B;
+    }
+    h4 {
+        color: #00491b;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    span{
+        color: #333;
+        font-weight: normal;
+    }
+}
+///*que queremos*////
+.list-razones{
+  margin-bottom: 15px;
+}
+.quequeremos {
+    h3 {
+      color: #007f48;
+        margin-bottom: 30px;
+    }
+}
+.circle-num {
+    background-color: #008044;
+    border-radius: 50%;
+    color: #fff;
+    height: 62px;
+    width: 62px;
+    padding: 11px;
+    font-size: 28px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+///*detalle noticias*///
+.info-noticia {
+    h2 {
+    color: #007f48;
+    font-weight: bold;
+    margin-bottom: 25px;
     }
 }

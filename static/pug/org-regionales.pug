@@ -1,0 +1,157 @@
+doctype html
+html
+	head
+		title AIDESEP
+		meta(name='keywords', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		//bootstrap
+		link(href='css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+		// animate.css
+		link(href='css/animate.css', rel='stylesheet', type='text/css', media='all')
+		//slick slider css
+		link(href='css/slick.css', rel='stylesheet', type='text/css', media='all')
+		link(href='css/slick-theme.css', rel='stylesheet', type='text/css', media='all')
+		// mystyles 
+		link(href='css/main.css', rel='stylesheet', type='text/css', media='all')
+		// fonts
+		link(href='css/fonts.css', rel='stylesheet', type='text/css')
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		//favicon
+		link(rel="shortcut icon",href="img/favicon.ico")
+
+	body 
+		#fb-root
+		script.
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.10";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+
+
+		//header
+		include includes/header.pug
+
+		section.banner-interna
+			.item
+				img(src='img/quienes-somos.jpg', width="100%" alt='')
+				.banner-text
+					.box-trans
+						h1 Organizaciones Regionales
+								
+		//Misión y Visión
+		section.organizaciones-regionales.aside
+			.container
+				.row
+					.col-md-12
+						h2 Organizaciones Regionales
+						hr.line-title-seccion
+				.row.bloque-org-regional
+						.col-md-4
+							img(src="img/org-regionales/asc-arpi.png", width="100%")
+							br 
+						.col-md-8
+								h2 ARPI SC:
+								h3 Asociación Regional de Pueblos Indígenas de la Selva Central. 
+								h4 Regiones: 
+									span
+										| Abarca las regiones de Junín, Pasco, Huánuco y Ucayali.
+								h4 Contacto: 
+									span
+										| Correo: arpiselvacentral@yahoo.es / Dirección: Jr. Julio C. Tello N° 921 – Provincia de Satipo, departamento de Junín
+				.row.bloque-org-regional
+						.col-md-4
+							img(src="img/org-regionales/asc-arpi.png", width="100%")
+							br 
+						.col-md-8
+								h2 ARPI SC:
+								h3 Asociación Regional de Pueblos Indígenas de la Selva Central. 
+								h4 Regiones: 
+									span
+										| Abarca las regiones de Junín, Pasco, Huánuco y Ucayali.
+								h4 Contacto: 
+									span
+										| Correo: arpiselvacentral@yahoo.es / Dirección: Jr. Julio C. Tello N° 921 – Provincia de Satipo, departamento de Junín
+				.row.bloque-org-regional
+						.col-md-4
+							img(src="img/org-regionales/asc-arpi.png", width="100%")
+							br 
+						.col-md-8
+								h2 ARPI SC:
+								h3 Asociación Regional de Pueblos Indígenas de la Selva Central. 
+								h4 Regiones: 
+									span
+										| Abarca las regiones de Junín, Pasco, Huánuco y Ucayali.
+								h4 Contacto: 
+									span
+										| Correo: arpiselvacentral@yahoo.es / Dirección: Jr. Julio C. Tello N° 921 – Provincia de Satipo, departamento de Junín
+				.row.bloque-org-regional
+						.col-md-4
+							img(src="img/org-regionales/asc-arpi.png", width="100%")
+							br 
+						.col-md-8
+								h2 ARPI SC:
+								h3 Asociación Regional de Pueblos Indígenas de la Selva Central. 
+								h4 Regiones: 
+									span
+										| Abarca las regiones de Junín, Pasco, Huánuco y Ucayali.
+								h4 Contacto: 
+									span
+										| Correo: arpiselvacentral@yahoo.es / Dirección: Jr. Julio C. Tello N° 921 – Provincia de Satipo, departamento de Junín
+				.row.bloque-org-regional
+						.col-md-4
+							img(src="img/org-regionales/asc-arpi.png", width="100%")
+							br 
+						.col-md-8
+								h2 ARPI SC:
+								h3 Asociación Regional de Pueblos Indígenas de la Selva Central. 
+								h4 Regiones: 
+									span
+										| Abarca las regiones de Junín, Pasco, Huánuco y Ucayali.
+								h4 Contacto: 
+									span
+										| Correo: arpiselvacentral@yahoo.es / Dirección: Jr. Julio C. Tello N° 921 – Provincia de Satipo, departamento de Junín
+				.row.bloque-org-regional
+						.col-md-4
+							img(src="img/org-regionales/asc-arpi.png", width="100%")
+							br 
+						.col-md-8
+								h2 ARPI SC:
+								h3 Asociación Regional de Pueblos Indígenas de la Selva Central. 
+								h4 Regiones: 
+									span
+										| Abarca las regiones de Junín, Pasco, Huánuco y Ucayali.
+								h4 Contacto: 
+									span
+										| Correo: arpiselvacentral@yahoo.es / Dirección: Jr. Julio C. Tello N° 921 – Provincia de Satipo, departamento de Junín
+
+		br
+		//entidades
+		include includes/entidades.pug
+
+		//suscribirse
+		include includes/suscribete.pug
+
+		//footer
+		include includes/footer.pug
+
+		// jQuery (necessary for Bootstrap's JavaScript plugins)
+		script(src='js/jquery.min.js')
+		//slick slider js
+		script(src='js/slick.js')
+		script(type='text/javascript').
+				$(document).ready(function(){
+					$('.responsive').slick({
+						setting-name: setting-value
+					});
+				});
+
+		//my js
+		script(src='js/min.js')
+		script(src="js/wow.min.js")
+		script.
+			new WOW().init();
+		script(src='js/bootstrap.min.js')

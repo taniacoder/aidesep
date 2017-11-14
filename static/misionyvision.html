@@ -86,9 +86,9 @@
                   <li><a href="nuestra-historia.html">> NUESTRA HISTORIA</a></li>
                   <li><a href="misionyvision.html">> MÍSION Y VÍSION</a></li>
                   <li><a href="consejo-directivo.html">> CONSEJO DIRECTIVO</a></li>
-                  <li><a href="#">
+                  <li><a href="org-regionales.html">
                        > ORGANIZACIONES <br>REGIONALES</a></li>
-                  <li><a href="#">> QUÉ QUEREMOS</a></li>
+                  <li><a href="quequeremos.html">> QUÉ QUEREMOS</a></li>
                 </ul>
               </li>
               <li><a href="nuestro-trabajo.html">NUESTRO TRABAJO</a></li>
@@ -101,7 +101,14 @@
                   <li><a href="videos.html">> VIDEOS</a></li>
                 </ul>
               </li>
-              <li><a href="contactenos.html">CONTACTO</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACTO<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="contactenos.html">> AIDESEP</a></li>
+                  <li><a href="organizaciones.html">> ORGANIZACIONES</a></li>
+                  <li><a href="preguntas-frecuentes.html">
+                      > PREGUNTAS<br>FRECUENTES</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
           <!-- /.navbar-collapse-->
@@ -133,11 +140,15 @@
             <p>Los Estados del Perú y el mundo, las empresas privadas entre otros, toman conciencia de los impactos negativos que tienen en su accionar sobre el territorio, el bosque y los pueblos indígenas.</p>
             <p>Integer sapien tellus, suscipit sed tellus eget, fermentum venenatis sem. Proin dolor sem, maximus sed elementum id, finibus at metus. </p>
             <p>Asimismo, los pueblos indígenas inciden en los espacios de decisión y gran envergadura a nivel nacional e internacional y su rol en la conservación de la Amazonía es valorada en todo el mundo.</p>
-            <p>Los pueblos indígenas cuentan con autonomía, son reconocidos y sus territorios ancestrales son titulados integralmente, cuentan con capacidad de gestión y manejo de su economía indígena según sus principios de Vida Plena.</p>
-            <h3>Valores</h3>
-            <p>Los valores que rigen nuestra organización se sustentan en los principios de:</p><br>
+            <p>Los pueblos indígenas cuentan con autonomía, son reconocidos y sus territorios ancestrales son titulados integralmente, cuentan con capacidad de gestión y manejo de su economía indígena según sus principios de Vida Plena.</p><br>
           </div>
           <div class="col-md-5 aside"><img src="img/mision.png" width="100%"></div>
+        </div>
+        <div class="row aside">
+          <div class="col-md-12">
+            <h3>Valores</h3>
+            <p>Los valores que rigen nuestra organización se sustentan en los principios de:</p>
+          </div>
         </div>
       </div>
       <div class="valores">
@@ -228,8 +239,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <!--entidades-->
+    </section><br>
+    <!--entidades--><br>
     <section class="entidades">
       <div class="container">
         <div class="row">
@@ -258,7 +269,7 @@
           <div class="col-md-4">
             <div class="search">
               <form>
-                <input type="text" value="Buscador" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                <input type="text" value="Correo Electrónico" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
                 <input type="submit" value="Enviar">
               </form>
             </div>
@@ -310,9 +321,9 @@
     <script src="js/slick.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-      $('.responsive').slick({
-      setting-name: setting-value
-      });
+      	$('.responsive').slick({
+      		setting-name: setting-value
+      	});
       });
       
     </script>

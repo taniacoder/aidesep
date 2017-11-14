@@ -58,11 +58,15 @@ html
 						p Integer sapien tellus, suscipit sed tellus eget, fermentum venenatis sem. Proin dolor sem, maximus sed elementum id, finibus at metus. 
 						p Asimismo, los pueblos indígenas inciden en los espacios de decisión y gran envergadura a nivel nacional e internacional y su rol en la conservación de la Amazonía es valorada en todo el mundo.
 						p Los pueblos indígenas cuentan con autonomía, son reconocidos y sus territorios ancestrales son titulados integralmente, cuentan con capacidad de gestión y manejo de su economía indígena según sus principios de Vida Plena.
-						h3 Valores
-						p Los valores que rigen nuestra organización se sustentan en los principios de:
+
 						br 
 					.col-md-5.aside
 						img(src="img/mision.png", width="100%")
+					
+				.row.aside
+					.col-md-12
+						h3 Valores
+						p Los valores que rigen nuestra organización se sustentan en los principios de:
 			.valores
 				.container
 					.row
@@ -115,43 +119,13 @@ html
 									p 1
 								.vtext
 									p Justicia
-
-
-				
-
+		br
 		//entidades
-		section.entidades
-			.container
-				.row
-					.responsive2
-						div.col-md-3
-							img(src="img/home/ap1.png")
-						div.col-md-3
-							img(src="img/home/ap2.png")
-						div.col-md-3
-							img(src="img/home/ap3.png")
-						div.col-md-3
-							img(src="img/home/ap4.png")
-						div.col-md-3
-							img(src="img/home/ap5.png")
-						div.col-md-3
-							img(src="img/home/ap6.png")
-						div.col-md-3
-							img(src="img/home/ap7.png")
+		include includes/entidades.pug
+
 		//suscribirse
-		section.suscribete
-			.container
-				.row
-					.col-md-offset-2.col-md-4.prom-subsc
-						img(src="img/icons/subsc.svg")
-						.txt-subsc
-							h2 Suscribete
-							p Entérate de nuestras noticias
-					.col-md-4
-						.search
-							form
-								input(type='text', value='Buscador', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = '';}")
-								input(type='submit', value='Enviar')
+		include includes/suscribete.pug
+
 		//footer
 		include includes/footer.pug
 
@@ -161,9 +135,9 @@ html
 		script(src='js/slick.js')
 		script(type='text/javascript').
 				$(document).ready(function(){
-				$('.responsive').slick({
-				setting-name: setting-value
-				});
+					$('.responsive').slick({
+						setting-name: setting-value
+					});
 				});
 
 		//my js

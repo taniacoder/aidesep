@@ -34,76 +34,86 @@ html
 
 		//header
 		include includes/header.pug
-		
+
 		section.banner-interna
 			.item
 				img(src='img/quienes-somos.jpg', width="100%" alt='')
 				.banner-text
 					.box-trans
-						h1 Multimedia
+						h1 Qué Queremos
 								
-		//Multimedia
-		section.quienes-somos
+		//Misión y Visión
+		section.quequeremos.aside
 			.container
 				.row
-					.aside.tnoticia
-						h2 Publicaciones y Materiales
+					.col-md-12
+						h2 ¿Qué haremos? 
 						hr.line-title-seccion
-						.col-md-6
-							.box-descarga
-								.title-descarga
-									p LISTA DE DIRIGENTES DE LA AMAZONIA PERUANA
-								.icon-descarga
-									i(aria-hidden="true").fa.fa-cloud-download.fa-4x
-						.col-md-6
-							.box-descarga
-								.title-descarga
-									p LISTA DE DIRIGENTES DE LA AMAZONIA PERUANA
-								.icon-descarga
-									i(aria-hidden="true").fa.fa-cloud-download.fa-4x
-						.col-md-6
-							.box-descarga
-								.title-descarga
-									p LISTA DE DIRIGENTES DE LA AMAZONIA PERUANA
-								.icon-descarga
-									i(aria-hidden="true").fa.fa-cloud-download.fa-4x
-						.col-md-6
-							.box-descarga
-								.title-descarga
-									p LISTA DE DIRIGENTES DE LA AMAZONIA PERUANA
-								.icon-descarga
-									i(aria-hidden="true").fa.fa-cloud-download.fa-4x
-						.col-md-6
-							.box-descarga
-								.title-descarga
-									p LISTA DE DIRIGENTES DE LA AMAZONIA PERUANA
-								.icon-descarga
-									i(aria-hidden="true").fa.fa-cloud-download.fa-4x
-						.col-md-6
-							.box-descarga
-								.title-descarga
-									p LISTA DE DIRIGENTES DE LA AMAZONIA PERUANA
-								.icon-descarga
-									i(aria-hidden="true").fa.fa-cloud-download.fa-4x
-						.col-md-6
-							.box-descarga
-								.title-descarga
-									p LISTA DE DIRIGENTES DE LA AMAZONIA PERUANA
-								.icon-descarga
-									i(aria-hidden="true").fa.fa-cloud-download.fa-4x
-						.col-md-6
-							.box-descarga
-								.title-descarga
-									p LISTA DE DIRIGENTES DE LA AMAZONIA PERUANA
-								.icon-descarga
-									i(aria-hidden="true").fa.fa-cloud-download.fa-4x
-									
+				.row
+					.col-md-12
+						h3 AGENDA INDÍGENA
+				.row
+					.col-md-6
+						.row.list-razones
+							.col-md-2
+								.circle-num
+									p 1
+							.col-md-10
+								.txt-razones
+									p Los pueblos indígenas estaremos unidos para defender nuestros territorios y lograr su titulación integral, exigiendo el derecho al consentimiento previo, libre, informado y de buena fe.
+
+					.col-md-6
+						.row.list-razones
+							.col-md-2
+								.circle-num
+									p 2
+							.col-md-10
+								.txt-razones
+									p Hacer viable y posible el ejercicio de la libre determinación de todos los Pueblos Indígenas.
+				.row
+					.col-md-6
+						.row.list-razones
+							.col-md-2
+								.circle-num
+									p 3
+							.col-md-10
+								.txt-razones
+									p Proteger a nuestros hermanos indígenas no contactados y en contacto inicial – PIACI en su libre determinación de alejarse de las grandes ciudades y permanecer libres en medio de nuestros bosques amazónicos.
+
+					.col-md-6
+						.row.list-razones
+							.col-md-2
+								.circle-num
+									p 4
+							.col-md-10
+								.txt-razones
+									p Posicionamiento del Plan de Vida Plena Amazónico y apoyo del Estado para su implementación.
+				.row
+					.col-md-6
+						.row.list-razones
+							.col-md-2
+								.circle-num
+									p 5
+							.col-md-10
+								.txt-razones
+									p Recuperar el máximo de nuestros territorios ancestrales como única garantía de supervivencia de nuestros pueblos y el desarrollo de nuestras futuras generaciones.
+
+					.col-md-6
+						.row.list-razones
+							.col-md-2
+								.circle-num
+									p 6
+							.col-md-10
+								.txt-razones
+									p Recuperar el derecho a la jurisdicción indígena y a la legalización de nuestro derecho consuetudinario.
+
+		br
 		//entidades
 		include includes/entidades.pug
 
 		//suscribirse
 		include includes/suscribete.pug
-		
+
 		//footer
 		include includes/footer.pug
 
@@ -113,9 +123,9 @@ html
 		script(src='js/slick.js')
 		script(type='text/javascript').
 				$(document).ready(function(){
-				$('.responsive').slick({
-				setting-name: setting-value
-				});
+					$('.responsive').slick({
+						setting-name: setting-value
+					});
 				});
 
 		//my js

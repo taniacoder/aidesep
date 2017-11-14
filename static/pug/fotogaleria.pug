@@ -84,38 +84,11 @@ html
 
 
 		//entidades
-		section.entidades
-			.container
-				.row
-					.responsive2
-						div.col-md-3
-							img(src="img/home/ap1.png")
-						div.col-md-3
-							img(src="img/home/ap2.png")
-						div.col-md-3
-							img(src="img/home/ap3.png")
-						div.col-md-3
-							img(src="img/home/ap4.png")
-						div.col-md-3
-							img(src="img/home/ap5.png")
-						div.col-md-3
-							img(src="img/home/ap6.png")
-						div.col-md-3
-							img(src="img/home/ap7.png")
+		include includes/entidades.pug
+
 		//suscribirse
-		section.suscribete
-			.container
-				.row
-					.col-md-offset-2.col-md-4.prom-subsc
-						img(src="img/icons/subsc.svg")
-						.txt-subsc
-							h2 Suscribete
-							p Entérate de nuestras noticias
-					.col-md-4
-						.search
-							form
-								input(type='text', value='Buscador', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = '';}")
-								input(type='submit', value='Enviar')
+		include includes/suscribete.pug
+		
 		//footer
 		include includes/footer.pug
 		script(src='js/poopup.js')

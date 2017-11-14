@@ -63,12 +63,12 @@ section.menu
               li
                 a(href='consejo-directivo.html') > CONSEJO DIRECTIVO
               li
-                a(href='#') 
+                a(href='org-regionales.html') 
                   |> ORGANIZACIONES 
                   br
                   | REGIONALES
               li
-                a(href='#') > QUÉ QUEREMOS
+                a(href='quequeremos.html') > QUÉ QUEREMOS
           li
             a(href='nuestro-trabajo.html') NUESTRO TRABAJO
           li
@@ -87,8 +87,20 @@ section.menu
                 a(href='fotogaleria.html') > GALERIA
               li
                 a(href='videos.html') > VIDEOS
-          li
-            a(href='contactenos.html') CONTACTO
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+              |CONTACTO
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='contactenos.html') > AIDESEP
+              li
+                a(href='organizaciones.html') > ORGANIZACIONES
+              li
+                a(href='preguntas-frecuentes.html') > 
+                  | PREGUNTAS
+                  br
+                  | FRECUENTES
 
       // /.navbar-collapse
     // /.container-fluid
