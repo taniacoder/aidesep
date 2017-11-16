@@ -73,6 +73,12 @@
 .width-100 {
   width: 100%; }
 
+.pl-25px {
+  padding-left: 25px; }
+
+.pr-25px {
+  padding-right: 25px; }
+
 /*------Comuns--------*/
 * {
   margin: 0;
@@ -352,9 +358,13 @@ ul.social-in li i.rs {
       color: #fff; }
     .dropdown-menu li a {
       font-size: 13px;
-      padding: 10px 10px; }
+      padding: 10px 10px;
+      font-weight: 100; }
       .dropdown-menu li a:hover, .dropdown-menu li a:focus {
         background: top; }
+
+.caret {
+  margin-left: 10px; }
 
 /*-hover-end--*/
 .navbar-header .redes-seeker {
@@ -677,6 +687,9 @@ ul.social-in li i.rs {
   left: 0;
   right: 0;
   text-align: center; }
+  .banner-interna .banner-text h1 {
+    font-size: 30px;
+    margin-top: 10px; }
 
 /*.banner-text a.btn {
     background-color: #ec8b00;
@@ -687,7 +700,7 @@ ul.social-in li i.rs {
   color: #fff;
   background-color: rgba(0, 127, 72, 0.63);
   margin: auto;
-  width: 26%;
+  width: 20%;
   padding: 10px; }
   .banner-interna .box-trans h2 {
     font-weight: bold;
@@ -709,12 +722,14 @@ ul.social-in li i.rs {
 .icon-descarga {
   background-color: #007f48;
   height: 65px;
-  padding: 6px 10px; }
+  padding: 12px 10px; }
   .icon-descarga i {
-    color: #fff; }
+    color: #fff;
+    font-size: 3em; }
 
 .nuestro-trabajo h3 {
-  color: #008436; }
+  color: #008436;
+  font-size: 30px; }
 
 .nuestro-trabajo h4 {
   color: #008436;
@@ -773,8 +788,9 @@ ul.social-in li i.rs {
     background-color: #fff;
     color: #0A5020;
     position: absolute;
-    padding: 10px 0;
-    text-align: center; }
+    padding: 12px 0 0 20px;
+    text-align: center;
+    font-size: 18px; }
 
 button.accordion {
   background-color: #007F48;
@@ -998,11 +1014,12 @@ div.panel {
   .bloque-org-regional h2 {
     color: #00491b;
     font-weight: bold;
-    font-size: 34px; }
+    font-size: 30px; }
   .bloque-org-regional h3 {
     font-weight: bold;
     margin: 0px 0px 22px;
-    color: #3C3C3B; }
+    color: #3C3C3B;
+    font-size: 16px; }
   .bloque-org-regional h4 {
     color: #00491b;
     font-weight: bold;
@@ -1033,3 +1050,33 @@ div.panel {
   color: #007f48;
   font-weight: bold;
   margin-bottom: 25px; }
+
+.form-control {
+  border: 1px solid #007f48;
+  border-radius: 50px;
+  border-radius: 50px;
+  margin: 10px 0; }
+
+.form-control.mensaje {
+  height: 150px;
+  border-radius: 15px; }
+
+.check li {
+  padding-top: 15px;
+  list-style: none;
+  font-size: 15px;
+  font-weight: bold; }
+  .check li input {
+    margin-left: 5px; }
+  .check li span {
+    color: #007f48;
+    margin-left: 5px; }
+
+.area-enviar {
+  text-align: right; }
+
+.enviar button {
+  background-color: #00491b;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 23px; }

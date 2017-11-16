@@ -244,13 +244,16 @@ ul.social-in li i.rs {
 		a {
 		font-size: 13px;
 		padding: 10px 10px;
+		    font-weight: 100;
 		&:hover, &:focus {
 			background: top;
 			}
 		}
 	}
 }
-
+.caret {
+	margin-left: 10px;
+}
 /*-hover-end--*/
 .navbar-header .redes-seeker {
 	display: none;

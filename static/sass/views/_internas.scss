@@ -9,6 +9,10 @@
     left: 0;
     right: 0;
     text-align: center;
+    h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
 }
 /*.banner-text a.btn {
     background-color: #ec8b00;
@@ -20,7 +24,7 @@
 	color: #fff;
     background-color: rgba(0, 127, 72, 0.63);
     margin: auto;
-    width: 26%;
+    width: 20%;
     padding: 10px;
 	h2 {
 	 font-weight: bold;
@@ -43,14 +47,16 @@
 .icon-descarga {
     background-color: #007f48;
     height: 65px;
-    padding: 6px 10px;
+    padding: 12px 10px;
     i{
         color: #fff;
+        font-size: 3em;
     }
 }
 //nuestrotrabajo
 .nuestro-trabajo{
    h3{ color: $verde;
+    font-size: 30px;
     }
    h4 {
      color: $verde;
@@ -117,8 +123,9 @@
         background-color: #fff;
         color: #0A5020;
         position: absolute;
-        padding: 10px 0;
+        padding: 12px 0 0 20px;
         text-align: center;
+        font-size: 18px;
     }
 }
 //nuestrhistoria
@@ -335,12 +342,13 @@ div.panel {
     h2 {
         color: #00491b;
         font-weight: bold;
-        font-size: 34px;
+        font-size: 30px;
     }
     h3 {
         font-weight: bold;
         margin: 0px 0px 22px;
         color: #3C3C3B;
+        font-size: 16px;
     }
     h4 {
         color: #00491b;
@@ -381,4 +389,39 @@ div.panel {
     font-weight: bold;
     margin-bottom: 25px;
     }
+}
+//////*formulario*////////}
+
+.form-control {
+    border: 1px solid #007f48;
+    border-radius: 50px;
+    border-radius: 50px;margin: 10px 0;
+
+}
+.form-control.mensaje {
+    height: 150px;
+    border-radius: 15px;
+}
+.check li {
+    padding-top: 15px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    input {
+        margin-left: 5px;
+    }
+    span {
+    color: #007f48;
+    margin-left: 5px;
+    }
+}
+
+.area-enviar {
+    text-align: right;
+}
+.enviar button {
+        background-color: #00491b;
+    color: #fff;
+    border-radius: 50px;
+    padding: 8px 23px;
 }
