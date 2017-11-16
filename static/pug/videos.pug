@@ -39,16 +39,13 @@ html
 
 		section.fotogaleria
 			.container-fluid
-				.row
-					.content-fotos
-						.col-sm-4.item
-							figure
-								a.movie-tile(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
-									img(src='http://localhost:88/imagenes-saweto/productos/149682769001.jpg', alt='Lorem Ipsum Dolor mein at', height='140', width='100%')
-									.box-orange-video
-									i.fa.fa-play-circle.fa-2x(aria-hidden="true")
-									p Lorem Ipsum Dolor mein at
-
+				.bloques.col-sm-12.col-sm-4.item
+					figure
+						a.movie-tile(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+							img(src='img/fotogaleria/img1.png', alt='Lorem Ipsum Dolor mein at', height='140', width='100%')
+							.box-orange-video
+							i.fa.fa-play-circle.fa-2x(aria-hidden="true")
+							p Lorem Ipsum Dolor mein at
 
 		//entidades
 		include includes/entidades.pug

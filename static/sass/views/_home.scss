@@ -171,10 +171,12 @@ padding: 30px;
     background-color: #EDEDED;  
     border-top: #8bb820 5px solid;
     padding: 18px;
-    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     height: 187px;
+    p {
+      font-size: 18px;
+    }
 }
 
 /*nuestros programas*/
