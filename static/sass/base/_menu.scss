@@ -72,13 +72,18 @@ ul {
     background-color: #007F48;
     padding: 4px;
     margin: 6px;
-        i{
-            color: #fff;
-        }
+    :hover {
+    	background-color: #8bb820;
+    }
+    i{
+        color: #fff;
+    }
     }
 }
 
-
+    .icon-circle:hover {
+    	background-color: #8bb820;
+    }
 .redes-seeker{
 	padding: 10px 0 15px;
 
@@ -220,6 +225,7 @@ ul.social-in li i.rs {
 	background: #544E3E;
     color: #fff;
     font-weight: 900;
+    -webkit-transition: 0.3s all;
 }
 
 .dropdown-menu {

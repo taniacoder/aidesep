@@ -125,8 +125,8 @@ $(".img").mousemove(function(event){
   //If you just used the mouse position values the translation effect will only go up and to the right, by subtracting half of the length / width of the imagevfrom the values  we get either a positive or negitive number so that the image will move in any direction.
   
   //The 40 controls the amount of "movement" that will happen by giving us a smaller number, feel free to change it to get the effect that you want.
-  var imgx = (mousex - 300) / 40;
-  var imgy = (mousey - 200) / 40;
+  var imgx = (mousex - 200) / 70;
+  var imgy = (mousey - 50) / 70;
   
   //Adds a translation css styles to the image element
   $(this).css("transform", "translate(" + imgx + "px," + imgy + "px)");

@@ -202,8 +202,13 @@ ul {
     background-color: #007F48;
     padding: 4px;
     margin: 6px; }
+    .redes .icon-circle :hover {
+      background-color: #8bb820; }
     .redes .icon-circle i {
       color: #fff; }
+
+.icon-circle:hover {
+  background-color: #8bb820; }
 
 .redes-seeker {
   padding: 10px 0 15px; }
@@ -338,7 +343,8 @@ ul.social-in li i.rs {
 .nav-flex li:hover {
   background: #544E3E;
   color: #fff;
-  font-weight: 900; }
+  font-weight: 900;
+  -webkit-transition: 0.3s all; }
 
 .dropdown-menu {
   padding: 0;
@@ -541,7 +547,7 @@ ul.social-in li i.rs {
     color: #fff; }
 
 /*ver todas las noticias*/
-.noticias a {
+.noticias a, .tnoticia a {
   color: initial; }
 
 .bloque-tnoticias {
@@ -559,7 +565,7 @@ ul.social-in li i.rs {
   padding: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  height: 187px; }
+  height: 145px; }
   .content-tnoticia p {
     font-size: 18px; }
 
@@ -699,6 +705,9 @@ ul.social-in li i.rs {
 
 .text-footer {
   margin-top: 10px; }
+
+.footer .icon-circle:hover {
+  background-color: #008536; }
 
 .banner-interna {
   position: relative; }
@@ -1002,9 +1011,9 @@ div.panel {
   padding-left: 0;
   margin: 0; }
 
-/*.movie-tile {
-    display: block !important;
-}*/
+.movie-tile {
+  display: block !important; }
+
 .scale-media {
   padding-bottom: 56.25%;
   position: relative; }
@@ -1018,26 +1027,11 @@ div.panel {
   top: 0;
   background-color: white; }
 
-.box-orange-video {
-  background: rgba(249, 172, 90, 0.66);
-  height: 140px;
-  position: absolute;
-  width: 242px;
-  top: 0; }
-
 .fa.fa-play-circle.fa-2x {
   position: absolute;
   top: 60px;
   left: 122px;
   color: #fff; }
-
-.movie-tile p {
-  color: #29201b;
-  font-weight: bold;
-  font-size: 15px;
-  padding: 5px 0; }
-  .movie-tile p:hover {
-    text-decoration: none; }
 
 .bloque-org-regional {
   margin-bottom: 30px; }
@@ -1053,7 +1047,7 @@ div.panel {
   .bloque-org-regional h4 {
     color: #00491b;
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 16px; }
   .bloque-org-regional span {
     color: #333;
     font-weight: normal; }
@@ -1072,14 +1066,20 @@ div.panel {
   height: 62px;
   width: 62px;
   padding: 11px;
-  font-size: 28px;
   text-align: center;
   margin-left: 15px; }
+  .circle-num p {
+    font-size: 28px; }
 
 .info-noticia h2 {
   color: #007f48;
   font-weight: bold;
   margin-bottom: 25px; }
+
+.noticias .logo-m-seeker {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left; }
 
 .form-control {
   border: 1px solid #007f48;

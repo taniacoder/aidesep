@@ -179,6 +179,7 @@ div.panel {
     }
 }
 
+
 //Consejo Directivo
 .representantes {
     display: flex;
@@ -304,9 +305,9 @@ div.panel {
     padding-left: 0;
     margin:0;
 }
-/*.movie-tile {
+.movie-tile {
     display: block !important;
-}*/
+}
 .scale-media {
     padding-bottom: 56.25%;
     position: relative;
@@ -321,28 +322,13 @@ div.panel {
     background-color: white;
 }
 
-.box-orange-video {
-      background: rgba(249, 172, 90, 0.66);
-    height: 140px;
-    position: absolute;
-    width: 242px;
-    top: 0;
-}
 .fa.fa-play-circle.fa-2x {
       position: absolute;
     top: 60px;
     left: 122px;
     color: #fff;
 } 
-.movie-tile p {
-  color: #29201b;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 5px 0;
-    &:hover {
-      text-decoration: none;
-    }
-}
+
 
 ///*organizaciones-regionales*////
 .bloque-org-regional {
@@ -361,7 +347,7 @@ div.panel {
     h4 {
         color: #00491b;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 16px;
     }
     span{
         color: #333;
@@ -385,9 +371,11 @@ div.panel {
     height: 62px;
     width: 62px;
     padding: 11px;
-    font-size: 28px;
     text-align: center;
     margin-left: 15px;
+    p {
+      font-size: 28px;
+    }
 }
 
 ///*detalle noticias*///
@@ -397,6 +385,9 @@ div.panel {
     font-weight: bold;
     margin-bottom: 25px;
     }
+}
+.noticias .logo-m-seeker {
+  justify-content: left;
 }
 //////*formulario*////////}
 

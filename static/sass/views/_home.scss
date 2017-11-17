@@ -103,7 +103,7 @@ padding: 30px;
     }
 }
 /*ver todas las noticias*/
-.noticias {
+.noticias, .tnoticia {
     a{
     color: initial;
     }
@@ -125,7 +125,7 @@ padding: 30px;
     padding: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    height: 187px;
+    height: 145px;
     p {
       font-size: 18px;
     }
@@ -280,4 +280,7 @@ padding: 30px;
 
 .text-footer {
     margin-top: 10px;
+}
+.footer .icon-circle:hover {
+    background-color: #008536;
 }
