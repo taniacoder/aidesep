@@ -41,16 +41,30 @@ html
 			.container-fluid
 				.row
 					.content-fotos
-						.elemento-foto
-							img(class="img-element" src="img/fotogaleria/img1.png", alt="", width="100%" )
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img2.png', width="100%" alt='')
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img3.png', width="100%" alt='')
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img5.png', width="100%" alt='')
-						.elemento-foto
-							img(class="img-element" src='img/fotogaleria/img4.png', width="100%" alt='')
+						figure
+							a.elemento-foto(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+								img(src='img/fotogaleria/img1.png', alt='', width='100%')
+						figure
+							a.elemento-foto(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+								img(src='img/fotogaleria/img1.png', alt='', width='100%')
+						figure
+							a.elemento-foto(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+								img(src='img/fotogaleria/img1.png', alt='', width='100%')
+						figure
+							a.elemento-foto(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+								img(src='img/fotogaleria/img1.png', alt='', width='100%')
+						figure
+							a.elemento-foto(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+								img(src='img/fotogaleria/img1.png', alt='', width='100%')
+
+
+					// Trailer Video Modal
+					#trailer.modal
+						.modal-dialog
+							.modal-content
+								a.hanging-close(href='#', data-dismiss='modal', aria-hidden='true')
+									img(src='https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24')
+								#trailer-video-container.scale-media
 
 		//entidades
 		include includes/entidades.pug
