@@ -71,54 +71,6 @@ opacity: 0.5;
   }
 }
 
-/*medias*/
-
-
-
-@media (max-width: 768px){
-	#carousel{
-		margin-bottom: 2%;
-	}
-	#carousel img {
-	    height: 345px;
-	    width: 100%; 
-	}
-	.box-trans {
-	    width: auto;
-    background-color: #007f48;
-	}
-	.banner-text {
-    position: absolute;
-    z-index: 100;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    background-color: #007f48;
-    padding-bottom: 50px;
-	}
-	.banner-text{ position: relative;
-	}
-	.mde{ padding-top: 0px;
-																							}
-}
-@media (max-width: 560px){
-	#carousel img{
-		height: 100% !important;
-	}
-	.box-trans {
-		h2{
-			font-size: 14px !important;
-		}
-		h3{
-			font-size: 14px !important;
-			margin-top: 0;
-		}
-	}
-}
-
-@media (max-width: 340px){
-}
 
 /**NOTICIAS**/
 .bloque-noticia {
@@ -178,10 +130,44 @@ padding: 30px;
       font-size: 18px;
     }
 }
+/**hover-noticia**/
 
+.card {
+  overflow: hidden;
+  position: relative;
+  /*display: inline-block;*/
+  /*
+  Each "card" is set to 600x400px because that is the size of  the image, adjust as needed. Make sure the overflow is set to hidden or else when the img scales it will clip with the other images.
+  */
+}
+
+.img-container {
+  transition: transform .5s ease;
+      background: rgb(85, 113, 20);
+}
+
+.img-container:hover {
+  transform: scale(1.1);
+  /*
+  Change the scale value as much as you want to change the amount of zoom on hover.
+  */
+}
+
+.card img {
+  opacity: .7;
+  transform: translate(0,0);
+  /*
+  Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
+  */
+  transition: opacity .25s ease-in-out;
+      width: 100%;
+}
+
+.card img:hover {
+  opacity: 1;
+}
 /*nuestros programas*/
 .content-programa{
-    padding: 25px;
     background-color: #008536;
     color: #fff;
     display: flex;
@@ -190,6 +176,16 @@ padding: 30px;
         font-size: 25px;
         font-weight: bold;
     }
+}
+.programa {
+    padding: 25px;
+    text-decoration: none;
+    color: #fff; 
+}
+.programa:hover {
+    background-color: #00491b;
+    color: #fff;
+    text-decoration: none;
 }
 /*entidades*/
 .entidades {

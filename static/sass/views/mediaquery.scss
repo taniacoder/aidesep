@@ -1,0 +1,97 @@
+/*medias*/
+
+@media (max-width: 768px){
+    #carousel{
+        margin-bottom: 2%;
+    }
+    #carousel img {
+        height: 345px;
+        width: 100%; 
+    }
+    .box-trans {
+    width: auto;
+    background-color: #007f48;
+     width: 100%!important;
+    }
+    .carousel-inner .banner-text {
+    position: relative!important;
+    z-index: 100;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #007f48;
+    }
+    .banner-text{ position: relative;
+    }
+    .mde{ padding-top: 0px;
+    }
+    .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    }
+    .banner-interna .banner-text {
+    display: none;
+    }
+    .banner-interna .item {
+    display: block;
+    }
+
+}
+@media (max-width: 560px){
+    #carousel img{
+        height: 100% !important;
+    }
+    .box-trans {
+        h2{
+            font-size: 14px !important;
+        }
+        h3{
+            font-size: 14px !important;
+            margin-top: 0;
+        }
+    }
+    .logo-m-seeker {
+    flex-direction: column;
+    }
+    //*descargas*//
+    .icon-descarga {
+    height: 96px;
+    padding: 30px 10px;
+    }
+
+    .title-descarga {
+    height: 96px;
+    }
+
+}
+
+
+@media (max-width: 560px) {
+     .head-right .redes-seeker ul {
+        display: none;
+     }
+     .navbar-header .redes-seeker {
+        display: flex;
+        justify-content: flex-start;
+        padding: 9px 0 0 9px;
+    }
+    .content-noticia p {
+        font-size: 18px;
+            color: #000;
+    }
+    .content-noticia hr {
+    display: none;
+    }
+    .bloque-noticia .content-noticia {
+    background: #ededed;
+    padding: 12px;
+    position: relative;
+    bottom: 0;
+    color: #000;
+    }
+}
+@media (max-width: 391px) {
+    .search input[type="text"] {
+ 
+    }
+}

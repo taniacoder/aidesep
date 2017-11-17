@@ -126,7 +126,7 @@ ul {
 }
 
 ul.social-in li i.rs {
-    background: url(../images/flickr.svg)no-repeat;
+    /*background: url(../images/flickr.svg)no-repeat;*/
     width: 40px;
     height: 24px;
 }
@@ -308,18 +308,3 @@ border: none;
 
 }
 
-@media (max-width: 560px) {
- .head-right .redes-seeker ul {
- 	display: none;
- }
- .navbar-header .redes-seeker {
-	display: flex;
-	justify-content: flex-start;
-    padding: 9px 0 0 9px;
-}
-}
-@media (max-width: 391px) {
-	.search input[type="text"] {
-    width: 178px;
-	}
-}

@@ -245,7 +245,7 @@ ul {
   font-size: 20px; }
 
 ul.social-in li i.rs {
-  background: url(../images/flickr.svg) no-repeat;
+  /*background: url(../images/flickr.svg)no-repeat;*/
   width: 40px;
   height: 24px; }
 
@@ -424,22 +424,6 @@ ul.social-in li i.rs {
         color: #ffffff;
         padding: 14px 0px; } }
 
-@media (max-width: 560px) {
-  .head-right .redes-seeker ul {
-    display: none; }
-  .navbar-header .redes-seeker {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding: 9px 0 0 9px; } }
-
-@media (max-width: 391px) {
-  .search input[type="text"] {
-    width: 178px; } }
-
 /*------Home--------*/
 .aside {
   margin: 3% 0 3%; }
@@ -510,39 +494,6 @@ ul.social-in li i.rs {
     font-size: 20px;
     margin-top: 5px; }
 
-/*medias*/
-@media (max-width: 768px) {
-  #carousel {
-    margin-bottom: 2%; }
-  #carousel img {
-    height: 345px;
-    width: 100%; }
-  .box-trans {
-    width: auto;
-    background-color: #007f48; }
-  .banner-text {
-    position: absolute;
-    z-index: 100;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    background-color: #007f48;
-    padding-bottom: 50px; }
-  .banner-text {
-    position: relative; }
-  .mde {
-    padding-top: 0px; } }
-
-@media (max-width: 560px) {
-  #carousel img {
-    height: 100% !important; }
-  .box-trans h2 {
-    font-size: 14px !important; }
-  .box-trans h3 {
-    font-size: 14px !important;
-    margin-top: 0; } }
-
 /**NOTICIAS**/
 .bloque-noticia {
   position: relative;
@@ -590,9 +541,45 @@ ul.social-in li i.rs {
   .content-tnoticia p {
     font-size: 18px; }
 
+/**hover-noticia**/
+.card {
+  overflow: hidden;
+  position: relative;
+  /*display: inline-block;*/
+  /*
+  Each "card" is set to 600x400px because that is the size of  the image, adjust as needed. Make sure the overflow is set to hidden or else when the img scales it will clip with the other images.
+  */ }
+
+.img-container {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  background: #557114; }
+
+.img-container:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  /*
+  Change the scale value as much as you want to change the amount of zoom on hover.
+  */ }
+
+.card img {
+  opacity: .7;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  /*
+  Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
+  */
+  -webkit-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+  width: 100%; }
+
+.card img:hover {
+  opacity: 1; }
+
 /*nuestros programas*/
 .content-programa {
-  padding: 25px;
   background-color: #008536;
   color: #fff;
   display: -webkit-box;
@@ -604,6 +591,16 @@ ul.social-in li i.rs {
   .content-programa h3 {
     font-size: 25px;
     font-weight: bold; }
+
+.programa {
+  padding: 25px;
+  text-decoration: none;
+  color: #fff; }
+
+.programa:hover {
+  background-color: #00491b;
+  color: #fff;
+  text-decoration: none; }
 
 /*entidades*/
 .entidades {
@@ -730,6 +727,10 @@ ul.social-in li i.rs {
   .icon-descarga i {
     color: #fff;
     font-size: 3em; }
+
+.text-resalt {
+  color: #00491b;
+  font-weight: bold; }
 
 .nuestro-trabajo h3 {
   color: #008436;
@@ -1087,3 +1088,75 @@ div.panel {
   color: #fff;
   border-radius: 50px;
   padding: 8px 23px; }
+
+/*medias*/
+@media (max-width: 768px) {
+  #carousel {
+    margin-bottom: 2%; }
+  #carousel img {
+    height: 345px;
+    width: 100%; }
+  .box-trans {
+    width: auto;
+    background-color: #007f48;
+    width: 100% !important; }
+  .carousel-inner .banner-text {
+    position: relative !important;
+    z-index: 100;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #007f48; }
+  .banner-text {
+    position: relative; }
+  .mde {
+    padding-top: 0px; }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none; }
+  .banner-interna .banner-text {
+    display: none; }
+  .banner-interna .item {
+    display: block; } }
+
+@media (max-width: 560px) {
+  #carousel img {
+    height: 100% !important; }
+  .box-trans h2 {
+    font-size: 14px !important; }
+  .box-trans h3 {
+    font-size: 14px !important;
+    margin-top: 0; }
+  .logo-m-seeker {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .icon-descarga {
+    height: 96px;
+    padding: 30px 10px; }
+  .title-descarga {
+    height: 96px; } }
+
+@media (max-width: 560px) {
+  .head-right .redes-seeker ul {
+    display: none; }
+  .navbar-header .redes-seeker {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 9px 0 0 9px; }
+  .content-noticia p {
+    font-size: 18px;
+    color: #000; }
+  .content-noticia hr {
+    display: none; }
+  .bloque-noticia .content-noticia {
+    background: #ededed;
+    padding: 12px;
+    position: relative;
+    bottom: 0;
+    color: #000; } }

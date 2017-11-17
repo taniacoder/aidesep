@@ -39,13 +39,18 @@ html
 
 		section.fotogaleria
 			.container-fluid
-				.bloques.col-sm-12.col-sm-4.item
-					figure
-						a.movie-tile(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
-							img(src='img/fotogaleria/img1.png', alt='Lorem Ipsum Dolor mein at', height='140', width='100%')
-							.box-orange-video
-							i.fa.fa-play-circle.fa-2x(aria-hidden="true")
-							p Lorem Ipsum Dolor mein at
+				.row
+					.content-fotos
+						.elemento-foto
+							img(class="img-element" src="img/fotogaleria/img1.png", alt="", width="100%" )
+						.elemento-foto
+							img(class="img-element" src='img/fotogaleria/img2.png', width="100%" alt='')
+						.elemento-foto
+							img(class="img-element" src='img/fotogaleria/img3.png', width="100%" alt='')
+						.elemento-foto
+							img(class="img-element" src='img/fotogaleria/img5.png', width="100%" alt='')
+						.elemento-foto
+							img(class="img-element" src='img/fotogaleria/img4.png', width="100%" alt='')
 
 		//entidades
 		include includes/entidades.pug
