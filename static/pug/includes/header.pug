@@ -1,10 +1,10 @@
 section.header
   .container
     .row
-      .col-md-4.col-xs-12.col-sm-12.animated.wow.zoomIn.animated
+      .col-md-4.col-xs-12.col-sm-12.animated.wow.zoomIn(data-wow-duration="2s")
         img(width='70%' src='img/home/logo.png')
       .col-md-8.col-xs-12.col-sm-12
-        .head-right.animated.wow.slideInRight.animated
+        .head-right.animated.wow.slideInRight(data-wow-duration="2s")
           .logo-m-seeker
             .redes
               .item
@@ -46,7 +46,7 @@ section.menu
                 i.rs  
       // Collect the nav links, forms, and other content for toggling
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
-        ul.nav-flex
+        ul.nav.navbar-nav.nav-flex
           li
             a(href='index.html') INICIO
           li.dropdown
