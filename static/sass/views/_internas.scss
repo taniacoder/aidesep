@@ -170,15 +170,18 @@ button.accordion.active:after {
 
 div.panel {
     padding: 0 18px;
-    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+        border: none;
+    background-color: #fff0;
     p {
         padding: 10px 0;
     }
 }
-
+.panel {
+    border: none;
+}
 
 //Consejo Directivo
 .representantes {

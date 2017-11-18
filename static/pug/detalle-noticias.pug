@@ -46,7 +46,7 @@ html
 		section.noticias.aside
 			.container
 				.row
-					.col-md-8
+					.col-md-8.animated.wow.slideInUp
 						.bloque-noticia
 							img(width='100%' src='img/home/noticia1.jpg')
 						.info-noticia
@@ -56,6 +56,8 @@ html
 							p Apoya compartiendo el enlace
 
 							iframe(width="560" height="315" src="https://www.youtube.com/embed/G-dxwDJKvpU" frameborder="0" allowfullscreen)
+						br
+						brs
 						.logo-m-seeker
 							.redes
 								.item
@@ -64,17 +66,15 @@ html
 									.icon-circle
 											i.fa.fa-twitter(aria-hidden="true")
 									.icon-circle
-											i.fa.fa-youtube(aria-hidden="true")
-									.icon-circle
-											i.fa.fa-flickr(aria-hidden="true")
+											i.fa.fa-envelope(aria-hidden="true")
 
 
-					.col-md-4
+					.col-md-4.animated.wow.slideInUp(data-wow-duration='2s')
 						.tnoticia
 							h2 Noticias recientes
 							hr.line-title-seccion
 						a(href="detalle-noticias.html")
-							.bloque-tnoticias
+							.bloque-tnoticias.mb-44
 								img(width='100%' src='img/home/t-noticias.png')
 								.content-tnoticia
 									p se inició el trabajo de campo para la titulacion de ccnn en san martín a través del proyecto pnud-dci
