@@ -708,6 +708,10 @@ ul.social-in li i.rs {
 .footer .icon-circle:hover {
   background-color: #008536; }
 
+.titulo-principal {
+  color: #514b3f;
+  font-weight: bold; }
+
 .banner-interna {
   position: relative; }
 
